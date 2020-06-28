@@ -1,0 +1,28 @@
+.link {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: color(brand, blue);
+    cursor: pointer;
+
+    transition: color .4s ease;
+  }
+
+  &:hover {
+    color: darken(color(brand, blue), 5);
+  }
+
+  &.-block {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  &.-yellow {
+    color: color(brand, yellow);
+
+    &:hover {
+      color: darken(color(brand, yellow), 5);
+    }
+  }
+}

@@ -1,23 +1,16 @@
 .logo {
-  width: $base-spacing * 32;
+  width: 100%;
+  height: auto;
 
-  svg {
-    width: 100%;
-    height: auto;
-
-    display: block;
-  }
+  text-align: center;
 
   a {
     display: block;
     height: 100%;
   }
-}
 
-
-@include breakpoint(sm) {
-  .logo {
-    width: $base-spacing * 20;
+  img {
+    max-width: 350px;
   }
 }
 

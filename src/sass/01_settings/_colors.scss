@@ -18,11 +18,8 @@ $colorPool: (
   yellow: (
     400: #FFDC00,
   ),
-  red: (
-    400: #FF2E33,
-  ),
   green: (
-    400: #28C94D,
+    700: #00897B,
   )
 );
 
@@ -32,18 +29,14 @@ $colorNames: (
     dark: map_get(map_get($colorPool, grey), 900),
   ),
   ambient: (
-    base: map_get(map_get($colorPool, grey), 900),
-    light: map_get($colorPool, white),
+    dark: map_get(map_get($colorPool, grey), 900),
+    base: map_get($colorPool, white),
   ),
   brand: (
     blue: map_get(map_get($colorPool, blue), 400),
     yellow: map_get(map_get($colorPool, yellow), 400),
     tk: map_get(map_get($colorPool, blue), 700),
   ),
-  checks: (
-    error: map_get(map_get($colorPool, red), 400),
-    success: map_get(map_get($colorPool, green), 400),
-  )
 );
 
 $colors: map_merge($colorPool, $colorNames);

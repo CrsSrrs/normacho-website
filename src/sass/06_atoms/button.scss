@@ -19,15 +19,6 @@
     text-decoration: none;
   }
 
-  &.-yellow {
-    background-color: color(brand, yellow);
-    color: color(grey, 900);
-
-    &:hover {
-      background-color: darken(color(brand, yellow), 5);
-    }
-  }
-
   &.-full-width {
     width: 100%;
     display: block;

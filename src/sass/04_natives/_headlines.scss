@@ -7,7 +7,7 @@ h6, .h6 {
   margin-top: 0;
   margin-bottom: text-spacing(m);
 
-  font-family: 'AvenirBold';
+  font-family: $secondary-font-family;
   letter-spacing: $base-letter-spacing;
   color: inherit;
 }

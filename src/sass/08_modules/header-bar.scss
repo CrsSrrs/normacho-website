@@ -1,0 +1,32 @@
+.header-bar {
+  padding-top: spacing(s);
+  padding-bottom: spacing(s);
+  margin-bottom: spacing(xl);
+
+  width: 100%;
+
+  background-color: color(ambient, dark);
+  color: color(ambient, base);
+}
+
+
+.nav-link {
+  @include font-size(l);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: color .4s ease;
+
+  &:not(:last-child) {
+    margin-right: spacing(s);
+  }
+
+  &:not(:first-child) {
+    margin-left: spacing(s);
+  }
+
+  &:hover {
+    color: color(green, 700);
+  }
+}

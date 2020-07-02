@@ -1,13 +1,18 @@
 <template>
-  <div class="ratio-box" v-if="src">
-    <transition name="fade-in">
+  <div class="ratio-box">
+    <template v-if="mode === 'image'">
       <div class="content" :style="{ backgroundImage: `url(${ require('@/assets/' + src) })` }" :key="src">
         <img :src="require(`@/assets/${src}`)" :srcset="srcSetString" :sizes="sizes">
       </div>
-    </transition>
-    <div class="_text">
-      <slot></slot>
-    </div>
+      <div class="_text">
+        <slot name="text"></slot>
+      </div>
+    </template>
+    <template v-if="mode === 'video'">
+      <div class="content">
+        <slot name="video"></slot>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -18,6 +23,10 @@ export default {
     src: String,
     srcset: Array,
     sizes: String,
+    mode: {
+      type: String,
+      default: 'image',
+    },
   },
   computed: {
     srcSetString() {

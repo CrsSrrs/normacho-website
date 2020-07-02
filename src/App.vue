@@ -1,23 +1,22 @@
 <template>
   <div id="app" class="site" data-server-rendered="true">
-    <div class="site-inner">
-      <Logo>
-        <img src="./assets/logo.jpg" alt="Normacho">
-      </Logo>
-    </div>
+    <HeaderBar></HeaderBar>
     <router-view/>
+    <Footer></Footer>
   </div>
 </template>
 
 <style lang="scss" src="./sass/style.scss"></style>
 
 <script>
-import Logo from '@/components/atoms/Logo.vue';
+import HeaderBar from '@/components/modules/HeaderBar.vue';
+import Footer from '@/components/modules/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    Logo,
+    HeaderBar,
+    Footer,
   },
 };
 </script>

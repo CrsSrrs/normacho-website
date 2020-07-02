@@ -59,7 +59,6 @@
     }
 
     ._title {
-      color: color(grey, 300);
       @include font-size(xl);
       font-weight: bold;
     }

@@ -1,0 +1,23 @@
+footer {
+  padding-top: spacing(s);
+  padding-bottom: spacing(s);
+  padding-left: spacing(xs);
+  padding-right: spacing(xs);
+
+  background-color: color(ambient, dark);
+
+  @include font-size(s);
+  color: color(grey, 100);
+}
+
+a {
+  margin-right: spacing(xs);
+  display: inline-block;
+  color: color(grey, 100);
+
+  transition: color .4s ease;
+
+  &:hover {
+    color: color(green, 700);
+  }
+}

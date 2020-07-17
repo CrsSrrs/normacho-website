@@ -2,12 +2,17 @@
   padding-top: spacing(s);
   padding-bottom: spacing(s);
   margin-bottom: spacing(xl);
-  border-bottom: spacing(xs) solid color(green, 700);
+  border-bottom: spacing(xxs) solid color(green, 700);
 
   width: 100%;
 
   background-color: color(ambient, dark);
   color: color(ambient, base);
+}
+
+
+.main-nav {
+  text-align: right;
 }
 
 
@@ -29,5 +34,17 @@
 
   &:hover {
     color: color(green, 700);
+  }
+}
+
+
+@include breakpoint(xs) {
+  .header-bar {
+    margin-bottom: spacing(l);
+  }
+
+  .main-nav {
+    margin-top: spacing(s);
+    text-align: center;
   }
 }

@@ -1,0 +1,44 @@
+<template>
+  <div class="audio-player">
+    <div class="row">
+      <div class="col-4  col-xs-12  valign-middle  mb-xs-s">
+        <div class="_info">
+          <div class="_name">{{ name }}</div>
+        </div>
+      </div>
+      <div class="col-8  col-xs-12  valign-middle">
+          <div class="_player" ref="player">
+            <audio ref="track" controls>
+              <source :src="src" type="audio/mp3">
+            </audio>
+          </div>
+      </div>
+    </div>
+    <div class="_vis">
+      <av-line
+        :canv-width="windowWidth"
+        :canv-height="400"
+        :fft-size="($mq.xs) ? 256 : 1024"
+        line-color="#00897B"
+        ref-link="track">
+      </av-line>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'AudioPlayer',
+  props: {
+    src: String,
+    name: String,
+  },
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    };
+  },
+};
+</script>
+
+<style scoped lang="scss" src="@/sass/07_elements/audio-player.scss"></style>

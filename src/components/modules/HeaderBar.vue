@@ -2,23 +2,23 @@
   <header class="header-bar">
     <div class="site-inner">
       <div class="row">
-        <div class="col-3  valign-middle">
+        <div class="col-3  col-sm-6  col-xs-12  valign-middle">
           <div class="row">
-            <div class="col-5  valign-middle">
+            <div class="col-5  col-xs-4  valign-middle">
               <Logo>
                 <img src="@/assets/logo_small_negative.png" alt="Normacho">
               </Logo>
             </div>
-            <div class="col-7  valign-middle">
+            <div class="col-7  col-xs-8  valign-middle">
               <h5 class="mb-0">Normacho</h5>
             </div>
           </div>
         </div>
-        <div class="col-9  text-right  valign-middle">
-          <nav>
-            <a class="nav-link">Band</a>
-            <a class="nav-link">Instagram</a>
-            <a class="nav-link" href="#youtube">YouTube</a>
+        <div class="col-9  col-sm-6  col-xs-12  valign-middle">
+          <nav class="main-nav">
+            <a class="nav-link" href="#">Band</a>
+            <a class="nav-link" href="#music">Audio</a>
+            <a class="nav-link" href="#youtube">Video</a>
           </nav>
         </div>
       </div>

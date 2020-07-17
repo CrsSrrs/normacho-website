@@ -1,0 +1,46 @@
+.audio-player {
+  .row {
+    position: relative;
+    z-index: 1;
+  }
+
+  ._index, ._name {
+    display: inline-block;
+    @include font-size(xl);
+  }
+
+  ._info {
+    padding-top: spacing(xxs);
+    padding-bottom: spacing(xxs);
+    color: color(grey, 100);
+
+    background-image: linear-gradient(to right, color(grey, 100) 80%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 20px 1px;
+    background-repeat: repeat-x;
+  }
+
+  audio {
+    width: 100%;
+    display: block;
+    outline: 0;
+  }
+
+  ._vis {
+    width: 100%;
+    overflow: hidden;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+
+    ::v-deep canvas {
+      width: 150%;
+      display: block;
+
+      transform: translate(-17.5%, 50%);
+    }
+  }
+}

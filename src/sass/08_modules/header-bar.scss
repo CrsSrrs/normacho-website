@@ -43,8 +43,14 @@
     margin-bottom: spacing(l);
   }
 
-  .main-nav {
-    margin-top: spacing(s);
-    text-align: center;
+  .nav-link {
+    &:not(:last-child) {
+      margin-right: spacing(xs);
+    }
+
+    &:not(:first-child) {
+      margin-left: spacing(xs);
+    }
   }
+
 }

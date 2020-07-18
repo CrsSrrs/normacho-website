@@ -10,6 +10,15 @@ module.exports = {
         './src/sass/settings.scss'
       ]
     },
+    prerenderSpa: {
+      registry: undefined,
+      renderRoutes: [
+        '/'
+      ],
+      useRenderEvent: false,
+      headless: false,
+      onlyProduction: true
+    }
   },
 };
 /* eslint-enable */

@@ -1,0 +1,78 @@
+.live-list {
+  ._item {
+    padding-top: spacing(xs);
+    padding-bottom: spacing(s);
+
+    &:not(:last-child) {
+      margin-bottom: spacing(s);
+    }
+
+    position: relative;
+
+    &::after {
+      content: '';
+      width: calc(#{(3/$grid-columns * 100%)} - #{$grid-gutter-width});
+      height: 3px;
+      background-color: color(green, 400);
+
+      position: absolute;
+      left: $grid-gutter-width/2;
+      bottom: 0;
+    }
+  }
+
+  [class*=col-] {
+    vertical-align: middle;
+  }
+
+  label {
+    @include font-size(xs);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: color(grey, 700);
+  }
+
+  ._date {
+    @include font-size(h4);
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  ._title {
+    @include font-size(l);
+  }
+
+  ._location {
+    color: color(grey, 700);
+    @include font-size(m);
+  }
+
+  ._additional {
+    display: block;
+
+    @include font-size(s);
+    font-weight: bold;
+    color: color(grey, 700);
+  }
+}
+
+
+
+@include breakpoint(xs) {
+  .live-list {
+    ._item {
+      &::after {
+        width: 4px;
+        height: 100%;
+
+        left: $grid-gutter-width/2;
+        top: 0;
+        bottom: auto;
+      }
+    }
+
+    ._date {
+      padding-left: spacing(xs);
+    }
+  }
+}

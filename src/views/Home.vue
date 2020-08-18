@@ -36,11 +36,13 @@
         </div>
       </div>
     </section>
+    <LiveList></LiveList>
   </div>
 </template>
 
 <script>
 import AnchorLink from '@/components/atoms/Link.vue';
+import LiveList from '@/components/modules/LiveList.vue';
 import MusicInsight from '@/components/modules/MusicInsight.vue';
 import Video from '@/components/elements/Video.vue';
 
@@ -48,6 +50,7 @@ export default {
   name: 'Home',
   components: {
     AnchorLink,
+    LiveList,
     MusicInsight,
     Video,
   },

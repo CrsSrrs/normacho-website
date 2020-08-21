@@ -50,7 +50,7 @@
     <section class="mb-xl">
       <div class="site-inner">
         <div class="row">
-          <div class="col-6  col-sm-12  valign-middle">
+          <div class="col-6  col-sm-12  valign-middle  mb-sm-s">
             <h3 class="h5">Was euch erwartet.</h3>
             <p>Seit Anfang 2020 spielen wir unter dem Namen Normacho zusammen. Wir profitieren von einschlägigen Bühnen- und Studioerfahrungen aus vorherigen Band-Projekten. Unser eingängiger Alternative Rock Sound wird maßgeblich von Einflüssen aus Blues-Rock, Gypsy Swing und einem kleinen Bisschen Pop-Rock geprägt. So divers, wie wir selbst, sind auch unsere Songs: deutsche und englische Texte; Themen zum feiern, lachen und weinen; harte Sounds und weiche Klänge geben sich in unseren Sets die Hand.</p>
           </div>

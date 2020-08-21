@@ -41,7 +41,7 @@
           </div>
           <div class="col-2  col-xs-8  col-xs-offset-4">
             <div class="_link">
-              <a class="link" href="https://rpz-bonn.de/" target="_blank">Zur Location</a>
+              <a class="link" href="https://rpz-bonn.de/events/10-12-2020-rpz-showcase-18/" target="_blank">Zum Event</a>
             </div>
           </div>
         </div>

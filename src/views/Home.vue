@@ -5,7 +5,7 @@
         <div class="row  mb-l">
           <div class="col-4  col-sm-12  mb-sm-l">
             <h1 class="h3">Wir machen Rockmusik. In Düsseldorf.</h1>
-            <p>Wir sind <strong>Normacho</strong>: 5 ganz normale Typen, die ganz normale Musik machen. Wir machen auch ganz normale Bilder und Videos von uns.</p>
+            <p>Wir sind <strong>Normacho</strong>: 5 ganz normale Typen, die ganz normalen Alternative Rock machen. Wir machen auch ganz normale Bilder und Videos von uns.</p>
             <AnchorLink href="https://www.instagram.com/normacho_band/" target="_blank">Entdecke uns auf Instagram</AnchorLink>
           </div>
           <div class="col-7  col-offset-1  col-sm-12  col-sm-offset-0">
@@ -21,7 +21,7 @@
           </div>
           <div class="col-7  col-offset-1  col-sm-12  col-sm-offset-0  valign-middle">
             <h2 class="h5">Hä? Ok, genauer.</h2>
-            <p>Wir sind 5 ganz normale Typen aus Düsseldorf. Die Leidenschaft, die uns vereint ist ein fetter Rocksound. Musik, die einem das Gefühl gibt am Leben zu sein. Musik, die einen durch Höhen und Tiefen führt - so eingängig, wie möglich und so komplex, wie nötig. Gemeinsam mit Euch wollen wir feiern, tanzen, die Hütte zum Einsturz bringen, oder auch einfach mal innehalten - wie es sich für Rock gehört! - Denn wir glauben, dass die Welt besseres verdient, als weich-gespülte und phantasielose Radio-Musik.</p>
+            <p>Die Leidenschaft, die uns vereint ist ein fetter Rocksound. Musik, die einem das Gefühl gibt am Leben zu sein. Musik, die einen durch Höhen und Tiefen führt - so eingängig, wie möglich und so komplex, wie nötig. Gemeinsam mit Euch wollen wir feiern, tanzen, die Hütte zum Einsturz bringen, oder auch einfach mal innehalten - wie es sich für Rock gehört! - Denn wir glauben, dass die Welt besseres verdient, als weich-gespülte und phantasielose Radio-Musik.</p>
             <AnchorLink href="#music">Hör mal rein</AnchorLink>
           </div>
         </div>

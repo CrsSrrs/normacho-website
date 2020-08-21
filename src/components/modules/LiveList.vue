@@ -1,9 +1,9 @@
 <template>
   <section id="live" class="live-list">
-    <div class="site-inner  mb-l">
+    <div class="site-inner">
       <div class="row">
         <div class="col-12">
-          <h2 class="h5">Hier sind wir live. Bock?</h2>
+          <h3 class="h5">Bock? Hier sind wir live.</h3>
         </div>
       </div>
       <div class="row  hide-xs">

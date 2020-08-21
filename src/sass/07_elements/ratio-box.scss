@@ -41,6 +41,16 @@
     }
   }
 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: color(grey, 900, .2);
+  }
+
   ._text {
     padding-left: spacing(m);
     padding-right: spacing(m);

@@ -4,6 +4,7 @@
       <div class="content" :style="{ backgroundImage: `url(${ require('@/assets/' + src) })` }" :key="src">
         <img :src="require(`@/assets/${src}`)" :srcset="srcSetString" :sizes="sizes">
       </div>
+      <div class="overlay" v-if="overlay"></div>
       <div class="_text">
         <slot name="text"></slot>
       </div>
@@ -23,6 +24,10 @@ export default {
     src: String,
     srcset: Array,
     sizes: String,
+    overlay: {
+      type: Boolean,
+      default: false,
+    },
     mode: {
       type: String,
       default: 'image',

@@ -15,7 +15,7 @@
       <div class="_list">
         <div class="row  _item">
           <div class="col-2  col-xs-4">
-            <div class="_date">24.10.<span class="_additional">ab 18:00 Uhr</span></div>
+            <div class="_date">24.10.<span class="_additional">ab 21:00 Uhr</span></div>
           </div>
           <div class="col-4  col-xs-8">
             <div class="_title">Krachgarten Wesel Live Stream</div>

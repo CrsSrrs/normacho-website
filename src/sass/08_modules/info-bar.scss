@@ -21,7 +21,7 @@
     padding-top: spacing(xxs);
     padding-bottom: spacing(xs);
 
-    @include font-size(s);
+    @include font-size(m);
 
     p:not(:first-child) {
       margin-top: spacing(xxs);

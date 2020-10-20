@@ -1,7 +1,6 @@
 .header-bar {
   padding-top: spacing(s);
   padding-bottom: spacing(s);
-  margin-bottom: spacing(xl);
   border-bottom: spacing(xxs) solid color(green, 700);
 
   width: 100%;
@@ -39,10 +38,6 @@
 
 
 @include breakpoint(xs) {
-  .header-bar {
-    margin-bottom: spacing(l);
-  }
-
   .nav-link {
     &:not(:last-child) {
       margin-right: spacing(xs);

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home  mt-xl  mt-xs-l">
     <section id="band" class="mb-xl">
       <div class="site-inner  mb-xl">
         <div class="row  mb-l">

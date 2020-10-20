@@ -1,0 +1,35 @@
+.info-bar {
+  padding-top: spacing(xs);
+  padding-bottom: spacing(s);
+
+  background-color: color(green, 700);
+
+  color: white;
+
+  p, a {
+    margin-bottom: 0;
+    margin-left: spacing(s);
+    margin-right: spacing(s);
+
+    display: inline-block;
+  }
+}
+
+
+@include breakpoint(xs) {
+  .info-bar {
+    padding-top: spacing(xxs);
+    padding-bottom: spacing(xs);
+
+    @include font-size(s);
+
+    p:not(:first-child) {
+      margin-top: spacing(xxs);
+      margin-bottom: spacing(xxs);
+    }
+
+    p {
+      display: block;
+    }
+  }
+}

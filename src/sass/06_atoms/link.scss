@@ -45,4 +45,16 @@
       transform: scaleX(1);
     }
   }
+
+  &.-light {
+    &,
+    &:link,
+    &:visited {
+      color: color(ambient, base);
+    }
+
+    &::before {
+      background-color: color(ambient, base);
+    }
+  }
 }

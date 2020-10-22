@@ -57,7 +57,7 @@ export default {
 
     calcTime(dist) {
       // Time calculations for days, hours, minutes and seconds
-      this.days = `0${Math.floor(dist / (1000 * 60 * 60 * 24))}`.slice(-2);
+      this.days = Math.floor(dist / (1000 * 60 * 60 * 24));
       this.hours = `0${Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))}`.slice(-2);
       this.minutes = `0${Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60))}`.slice(-2);
       this.seconds = `0${Math.floor((dist % (1000 * 60)) / 1000)}`.slice(-2);

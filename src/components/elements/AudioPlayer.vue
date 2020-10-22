@@ -7,14 +7,17 @@
         </div>
       </div>
       <div class="col-8  col-xs-12  valign-middle">
-          <div class="_player" ref="player">
-            <audio ref="track" controls>
-              <source :src="src" type="audio/mp3">
-            </audio>
-          </div>
+        <div class="_player" ref="player" v-if="src">
+          <audio ref="track" controls>
+            <source :src="src" type="audio/mp3">
+          </audio>
+        </div>
+        <div class="_player" v-if="!src">
+          <b>...coming soon.</b> <a href="https://www.instagram.com/p/CGXLmF8M5Ay/" class="link" target="_blank">Hier ein paar Insights.</a>
+        </div>
       </div>
     </div>
-    <div class="_vis">
+    <div class="_vis" v-if="src">
       <av-line
         :canv-width="windowWidth"
         :canv-height="400"

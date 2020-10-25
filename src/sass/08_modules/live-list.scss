@@ -52,6 +52,12 @@
     line-height: 1;
   }
 
+  ._year {
+    @include font-size(l);
+    color: color(grey, 700);
+    font-weight: 100;
+  }
+
   ._title {
     @include font-size(l);
   }

@@ -29,6 +29,7 @@ export default {
   mounted() {
     this.start = new Date(this.starttime).getTime();
     this.end = new Date(this.endtime).getTime();
+
     // Update the count down every 1 second
     this.timerCount(this.start, this.end);
     this.interval = setInterval(() => {

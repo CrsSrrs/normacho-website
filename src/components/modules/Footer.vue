@@ -3,12 +3,9 @@
     <div class="site-inner">
       <div class="row">
         <div class="col-8  col-xs-12">
-          <a href="https://www.instagram.com/normacho_band/" target="_blank">
-            Instagram
-          </a>
-          <a href="https://www.youtube.com/channel/UC43oiDJONOrc961W9uKGj0A" target="_blank">
-            YouTube
-          </a>
+          <a href="https://www.instagram.com/normacho_band/" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/channel/UC43oiDJONOrc961W9uKGj0A" target="_blank">YouTube</a>
+          <router-link to="Impressum">Impressum</router-link>
           <span>
             Wir benutzen keine Cookies und hier wird nix getracked.
           </span>

@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="_vis" v-if="src">
+    <div class="_vis" v-if="!iOS && src">
       <av-line
         :canv-width="windowWidth"
         :canv-height="400"
@@ -40,6 +40,20 @@ export default {
     return {
       windowWidth: window.innerWidth,
     };
+  },
+  computed: {
+    iOS() {
+      return [
+        'iPad Simulator',
+        'iPhone Simulator',
+        'iPod Simulator',
+        'iPad',
+        'iPhone',
+        'iPod',
+      ].includes(navigator.platform)
+      // iPad on iOS 13 detection
+      || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
+    },
   },
 };
 </script>

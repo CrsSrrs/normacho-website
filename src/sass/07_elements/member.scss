@@ -1,0 +1,21 @@
+.member {
+  margin-bottom: spacing(xl);
+
+  ._content {
+    padding-top: spacing(m);
+    padding-bottom: spacing(m-more);
+    padding-left: spacing(l-less);
+    padding-right: spacing(l-less);
+
+    color: color(ambient);
+    background-color: color(grey, 900, .85);
+  }
+
+  [class*=col-] {
+    position: relative;
+  }
+
+  .-pulled {
+    z-index: 1;
+  }
+}

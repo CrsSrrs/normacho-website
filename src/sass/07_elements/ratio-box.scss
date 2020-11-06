@@ -147,6 +147,12 @@
   }
 }
 
+.ratio-box.-insta {
+  &::before {
+    padding-top: 177%;
+  }
+}
+
 
 @supports (object-fit: cover) {
   .ratio-box {

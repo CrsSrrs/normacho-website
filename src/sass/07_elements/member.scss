@@ -1,6 +1,10 @@
 .member {
   margin-bottom: spacing(xl);
 
+  ._illu {
+    height: 750px;
+  }
+
   ._content {
     padding-top: spacing(m);
     padding-bottom: spacing(m-more);
@@ -8,7 +12,7 @@
     padding-right: spacing(l-less);
 
     color: color(ambient);
-    background-color: color(grey, 900, .85);
+    background-color: color(green, 700, .85);
   }
 
   [class*=col-] {
@@ -17,5 +21,30 @@
 
   .-pulled {
     z-index: 1;
+  }
+}
+
+
+
+@include breakpoint(xs) {
+  .member {
+    &:not(:last-child) {
+      margin-bottom: spacing(l);
+    }
+
+    .row, [class*=col-] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    ._illu {
+      height: 400px;
+    }
+
+    ._content {
+      padding-left: spacing(s);
+      padding-right: spacing(s);
+      background-color: color(grey, 900);
+    }
   }
 }

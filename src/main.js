@@ -9,6 +9,20 @@ Vue.config.productionTip = false;
 Vue.use(AudioVisual);
 Vue.use(MatchMedia);
 
+const fixIdScrolling = {
+  watch: {
+    $route() {
+      const { currentRoute } = this.$router;
+      const idToScrollTo = currentRoute.hash;
+      this.$nextTick(() => {
+        if (idToScrollTo && document.querySelector(idToScrollTo)) {
+          document.querySelector(idToScrollTo).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    },
+  },
+};
+
 const breakpoints = {
   lg: 1800,
   md: 1200,
@@ -18,6 +32,7 @@ const breakpoints = {
 };
 
 new Vue({
+  mixins: [fixIdScrolling],
   router,
   store,
   render: (h) => h(App),

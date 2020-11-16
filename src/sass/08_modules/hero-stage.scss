@@ -1,3 +1,91 @@
 .hero-stage {
+  margin-bottom: spacing(xl);
 
+  .band-illu {
+    position: relative;
+
+    img {
+      display: block;
+    }
+
+    ._back, ._mid {
+      transition: filter .3s ease, opacity .3s ease;
+    }
+
+    ._back {
+      opacity: .4;
+      z-index: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(8px, 8px);
+    }
+
+    ._mid {
+      position: relative;
+      z-index: 1;
+    }
+
+    ._front {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+
+      &:hover ~ ._mid {
+        opacity: .4;
+      }
+
+      &:hover ~ ._back {
+        opacity: .1;
+      }
+
+      a {
+        height: 100%;
+        display: block;
+
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        cursor: pointer;
+
+        transition: opacity .3s ease;
+
+        img {
+          height: 100%;
+        }
+
+        &:nth-child(1) {
+          left: 0;
+          z-index: 5;
+        }
+
+        &:nth-child(2) {
+          left: 22%;
+          z-index: 4;
+        }
+
+        &:nth-child(3) {
+          left: 34%;
+          z-index: 3;
+        }
+
+        &:nth-child(4) {
+          left: 57.6%;
+          z-index: 1;
+        }
+
+        &:nth-child(5) {
+          left: 81%;
+          z-index: 2;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }

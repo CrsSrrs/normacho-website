@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-6  col-sm-12">
+          <div class="col-6  col-sm-12  mb-sm-s">
             <Video id="gtE6BaqEpO4"></Video>
           </div>
           <div class="col-6  col-sm-12">

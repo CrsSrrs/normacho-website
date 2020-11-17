@@ -16,7 +16,7 @@
     <MusicInsight id="music"></MusicInsight>
     <section id="youtube" class="mb-xl">
       <div class="site-inner">
-        <div class="row">
+        <div class="row  mb-m">
           <div class="col-4  col-sm-12  mb-sm-m">
             <h5>
               Mehr? Na gut.
@@ -26,8 +26,13 @@
             </p>
             <a class="link" href="https://www.youtube.com/channel/UC43oiDJONOrc961W9uKGj0A" target="_blank">Check unseren YouTube-Kanal</a>
           </div>
-          <div class="col-7  col-offset-1  col-sm-12  col-sm-offset-0">
+        </div>
+        <div class="row">
+          <div class="col-6  col-sm-12">
             <Video id="gtE6BaqEpO4"></Video>
+          </div>
+          <div class="col-6  col-sm-12">
+            <Video id="AD2-3L3C8k0"></Video>
           </div>
         </div>
       </div>

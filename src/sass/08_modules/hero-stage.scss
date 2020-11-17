@@ -11,7 +11,7 @@
     }
 
     ._back, ._mid {
-      transition: opacity .3s ease;
+      transition: opacity .4s ease;
     }
 
     ._back {
@@ -50,7 +50,7 @@
         opacity: 0;
         cursor: pointer;
 
-        transition: opacity .3s ease;
+        transition: opacity .4s ease;
 
         img {
           height: 100%;
@@ -98,7 +98,7 @@
 
     &:not(.-active) {
       ._member {
-        max-height: 16px;
+        max-height: 12px;
 
         &::after {
           background-color: color(green, 900, .5);
@@ -111,7 +111,7 @@
     max-height: 0;
     min-width: 200px;
 
-    background-color: color(green, 400, 0.9);
+    background-color: color(green, 400, .9);
     color: color(ambient);
 
     position: absolute;

@@ -17,7 +17,7 @@
         <div class="col-9  col-sm-6  col-xs-8  valign-middle">
           <nav class="main-nav  text-right">
 <!--            <a class="nav-link" href="#band">Band</a>-->
-            <router-link class="nav-link" to="/band">Band</router-link>
+            <router-link class="nav-link" to="/#band">Band</router-link>
             <router-link class="nav-link" to="/#music">Musik</router-link>
             <router-link class="nav-link" to="/#live">Live</router-link>
           </nav>

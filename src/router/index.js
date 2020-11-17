@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import Band from '../views/Band.vue';
 import Imprint from '../views/Imprint.vue';
 
 Vue.use(VueRouter);
@@ -11,11 +10,6 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-  },
-  {
-    path: '/band',
-    name: 'Band',
-    component: Band,
   },
   {
     path: '/impressum',

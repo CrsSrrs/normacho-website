@@ -31,10 +31,10 @@
         </div>
         <div class="row  _item">
           <div class="col-2  col-xs-4">
-            <div class="_date">13.03.<span class="_year">2021</span><span class="_additional">ab 21:00 Uhr</span></div>
+            <div class="_date"><s>13.03.</s><span class="_year">2021</span><span class="_additional">Neues Datum TBA.</span></div>
           </div>
           <div class="col-4  col-xs-8">
-            <div class="_title">Krachgarten Wesel Live Stream</div>
+            <div class="_title">Krachgarten Wesel Live Stream (verschoben)</div>
           </div>
           <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
             <div class="_location"><a href="https://twitch.tv/krachgartentv" target="_blank">KrachgartenTV</a> auf Twitch</div>
@@ -62,7 +62,7 @@
           </div>
           <div class="col-2  col-xs-8  col-xs-offset-4">
             <div class="_link">
-              <a class="link" href="https://www.twitch.tv/videos/780622023?t=00h05m00s" target="_blank">Zur Aufzeichnung</a>
+              <a class="link" href="https://www.youtube.com/watch?v=LWYP-yLMAsY" target="_blank">Zur Aufzeichnung</a>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@
           </audio>
         </div>
         <div class="_player" v-if="!src">
-          <b>...coming soon.</b> <a href="https://www.instagram.com/p/CGXLmF8M5Ay/" class="link" target="_blank">Hier ein paar Insights.</a>
+          <b>...coming soon.</b> <a href="https://www.instagram.com/p/CYbqFZnM00q/?igshid=YmMyMTA2M2Y=" class="link" target="_blank">Hier ein paar Insights.</a>
         </div>
       </div>
     </div>

@@ -23,6 +23,33 @@
     width: 100%;
     display: block;
   }
+
+  &.-spotify {
+    background-color: #1DB954;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: lighten(#1DB954, 5);
+    }
+  }
+
+  &.-apple-music {
+    background-color: #fa586a;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: lighten(#fa586a, 5);
+    }
+  }
+
+  &.-youtube-music {
+    background-color: #ff0100;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: lighten(#ff0100, 5);
+    }
+  }
 }
 
 

@@ -28,11 +28,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-6  col-sm-12  mb-sm-s">
+          <div class="col-6  col-sm-12  mb-sm-xs">
             <Video id="gtE6BaqEpO4"></Video>
           </div>
           <div class="col-6  col-sm-12">
-            <Video id="AD2-3L3C8k0"></Video>
+            <Video id="oKcIwJUN9jg"></Video>
           </div>
         </div>
       </div>

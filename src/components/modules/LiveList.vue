@@ -15,33 +15,17 @@
       <div class="_list">
         <div class="row  _item">
           <div class="col-2  col-xs-4">
-            <div class="_date"><s>10.12.</s><span class="_year"><s>2020</s></span><span class="_additional">Neues Datum TBA.</span></div>
+            <div class="_date">18.06.<span class="_year">2022</span><span class="_additional"></span></div>
           </div>
           <div class="col-4  col-xs-8">
-            <div class="_title">RPZ Showcase (verschoben)</div>
+            <div class="_title">Release Night</div>
           </div>
           <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
-            <div class="_location">RPZ Bonn</div>
+            <div class="_location"><a href="https://www.spilles.de/" target="_blank">Spilles</a> Düsseldorf</div>
           </div>
           <div class="col-2  col-xs-8  col-xs-offset-4">
             <div class="_link">
-              <a class="link" href="https://rpz-bonn.de/" target="_blank">Zur Location</a>
-            </div>
-          </div>
-        </div>
-        <div class="row  _item">
-          <div class="col-2  col-xs-4">
-            <div class="_date"><s>13.03.</s><span class="_year">2021</span><span class="_additional">Neues Datum TBA.</span></div>
-          </div>
-          <div class="col-4  col-xs-8">
-            <div class="_title">Krachgarten Wesel Live Stream (verschoben)</div>
-          </div>
-          <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
-            <div class="_location"><a href="https://twitch.tv/krachgartentv" target="_blank">KrachgartenTV</a> auf Twitch</div>
-          </div>
-          <div class="col-2  col-xs-8  col-xs-offset-4">
-            <div class="_link">
-              <a class="link" href="https://twitch.tv/krachgartentv" target="_blank">Zum Stream</a>
+              <a class="link" href="https://g.page/hausspilles?share" target="_blank">Zur Location</a>
             </div>
           </div>
         </div>

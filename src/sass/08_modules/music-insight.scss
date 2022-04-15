@@ -8,4 +8,14 @@
   color: color(grey, 100);
 
   position: relative;
+
+  .button {
+    margin-right: spacing(xs);
+
+    &.-spotify, &.-apple-music, &.-youtube-music {
+      .icon {
+        width: auto;
+      }
+    }
+  }
 }

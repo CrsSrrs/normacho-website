@@ -1,8 +1,9 @@
 <template>
   <span class="timer">
     <span v-if="!live && !expired">in {{ days }}d {{ hours }}h {{ minutes }}m {{ seconds }}s</span>
-    <span v-if="live && !expired" class="live"><b>&bull; LIVE</b></span>
-    <span v-if="expired">Das Konzert ist vorbei! Verpasst? Kein Ding.</span>
+<!--    <span v-if="live && !expired" class="live"><b>&bull; LIVE</b></span>-->
+<!--    <span v-if="expired">Das Konzert ist vorbei! Verpasst? Kein Ding.</span>-->
+    <span v-if="live || expired"><b>Jetzt online!</b></span>
   </span>
 </template>
 

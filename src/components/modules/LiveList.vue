@@ -13,7 +13,7 @@
         <div class="col-2"></div>
       </div>
       <div class="_list">
-        <div class="row  _item">
+        <div class="row  _item" v-if="false">
           <div class="col-2  col-xs-4">
             <div class="_date">18.06.<span class="_year">2022</span><span class="_additional"></span></div>
           </div>

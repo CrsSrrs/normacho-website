@@ -7,14 +7,19 @@
         </div>
       </div>
       <div class="col-8  col-xs-12  valign-middle">
-        <div class="_player" ref="player" v-if="src">
-          <audio ref="track" controls>
-            <source :src="src" type="audio/mp3">
-          </audio>
-        </div>
-        <div class="_player" v-if="!src">
-          <b>...coming soon.</b> <a href="https://www.instagram.com/p/CYbqFZnM00q/?igshid=YmMyMTA2M2Y=" class="link" target="_blank">Hier ein paar Insights.</a>
-        </div>
+        <template v-if="embed">
+          <iframe style="border-radius:12px" :src="`https://open.spotify.com/embed/track/${src}?theme=1`" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </template>
+        <template v-else>
+          <div class="_player" ref="player" v-if="src">
+            <audio ref="track" controls>
+              <source :src="src" type="audio/mp3">
+            </audio>
+          </div>
+          <div class="_player" v-if="!src">
+            <b>...coming soon.</b> <a href="https://www.instagram.com/p/CYbqFZnM00q/?igshid=YmMyMTA2M2Y=" class="link" target="_blank">Hier ein paar Insights.</a>
+          </div>
+        </template>
       </div>
     </div>
     <div class="_vis" v-if="!iOS && src">
@@ -35,6 +40,7 @@ export default {
   props: {
     src: String,
     name: String,
+    embed: Boolean,
   },
   data() {
     return {

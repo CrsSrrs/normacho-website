@@ -13,15 +13,15 @@
         <div class="col-2"></div>
       </div>
       <div class="_list">
-        <div class="row  _item" v-if="false">
+        <div class="row  _item">
           <div class="col-2  col-xs-4">
-            <div class="_date">18.06.<span class="_year">2022</span><span class="_additional"></span></div>
+            <div class="_date">29.10.<span class="_year">2022</span><span class="_additional"></span></div>
           </div>
           <div class="col-4  col-xs-8">
-            <div class="_title">Release Night</div>
+            <div class="_title">Release Konzert</div>
           </div>
           <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
-            <div class="_location"><a href="https://www.spilles.de/" target="_blank">Spilles</a> Düsseldorf</div>
+            <div class="_location"><a href="https://www.spilles.de/abendbereich" target="_blank">Spilles</a> Düsseldorf</div>
           </div>
           <div class="col-2  col-xs-8  col-xs-offset-4">
             <div class="_link">

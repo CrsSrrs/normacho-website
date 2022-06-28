@@ -6,12 +6,12 @@
           <h3>Impressum</h3>
 
           <h5>Angaben gem&auml;&szlig; &sect; 5 TMG</h5>
-          <p>Christoph Schrörs<br />
-            Elisabethstraße 97<br />
-            40217 Düsseldorf</p>
+          <p>Lorenzo Vampiro<br />
+            Gutenbergstraße 60<br />
+            45128 Essen</p>
 
           <h5>Kontakt</h5>
-          <p class="mb-l">E-Mail: me@christophschroers.de</p>
+          <p class="mb-l">E-Mail: band@normacho.de</p>
 
           <h6>Haftung f&uuml;r Inhalte</h6>
           <p>Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect; 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit hinweisen.</p>

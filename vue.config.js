@@ -20,5 +20,14 @@ module.exports = {
       onlyProduction: true
     }
   },
+
+  configureWebpack: {
+    module: {
+      rules: [{
+        test: /\.svg$/,
+        loader: 'vue-svg-loader'
+      }]
+    }
+  },
 };
 /* eslint-enable */

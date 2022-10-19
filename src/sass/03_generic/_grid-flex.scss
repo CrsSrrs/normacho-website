@@ -2,6 +2,8 @@
     GRID FLEXBOX
 \*------------------------------------*/
 
+@use "sass:math";
+
 @mixin grid-flex {
   .container-fluid {
     margin-right: auto;
@@ -15,8 +17,8 @@
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: -$grid-gutter-width/2;
-    margin-left: -$grid-gutter-width/2;
+    margin-right: -$grid-gutter-width*0.5;
+    margin-left: -$grid-gutter-width*0.5;
     &.reverse {
       flex-direction: row-reverse;
     }
@@ -35,12 +37,12 @@
   }
   @for $i from 0 through $grid-columns {
     .col-offset-#{$i} {
-      margin-left: #{($i / $grid-columns) * 100%};
+      margin-left: #{math.div($i, $grid-columns) * 100%};
     }
   }
   @for $i from 0 through $grid-columns {
     .col-pull-#{$i} {
-      margin-left: #{($i / $grid-columns) * (-1) * 100%};
+      margin-left: #{math.div($i, $grid-columns) * (-1) * 100%};
     }
   }
   @each $device,
@@ -57,12 +59,12 @@
       }
       @for $i from 0 through $grid-columns {
         .col-#{$device}-offset-#{$i} {
-          margin-left: #{($i / $grid-columns) * 100%};
+          margin-left: #{math.div($i, $grid-columns) * 100%};
         }
       }
       @for $i from 0 through $grid-columns {
         .col-#{$device}-pull-#{$i} {
-          margin-left: #{($i / $grid-columns) * (-1) * 100%};
+          margin-left: #{math.div($i, $grid-columns) * (-1) * 100%};
         }
       }
     }
@@ -73,21 +75,21 @@
 
       //nested rows still should have negative margin
       .row {
-        margin-right: -$grid-gutter-width/2;
-        margin-left: -$grid-gutter-width/2;
+        margin-right: -$grid-gutter-width*0.5;
+        margin-left: -$grid-gutter-width*0.5;
       }
     }
   }
 }
 
 @mixin grid-flex-basics() {
-  padding-left: $grid-gutter-width/2;
-  padding-right: $grid-gutter-width/2;
+  padding-left: $grid-gutter-width*0.5;
+  padding-right: $grid-gutter-width*0.5;
   box-sizing: border-box;
   flex: 0 0 auto;
 }
 
 @mixin grid-flex-col($i) {
-  flex-basis: #{($i / $grid-columns) * 100%};
-  max-width: #{($i / $grid-columns) * 100%};
+  flex-basis: #{math.div($i, $grid-columns) * 100%};
+  max-width: #{math.div($i, $grid-columns) * 100%};
 }

@@ -26,15 +26,12 @@
   </footer>
 </template>
 
-<script>
-export default {
-  name: 'Footer',
-  computed: {
-    thisYear() {
-      return new Date().getFullYear();
-    },
-  },
-};
+<script setup lang="ts">
+import { computed } from 'vue';
+
+const thisYear = computed(() => {
+  return new Date().getFullYear();
+});
 </script>
 
 <style scoped lang="scss" src="@/sass/08_modules/footer.scss"></style>

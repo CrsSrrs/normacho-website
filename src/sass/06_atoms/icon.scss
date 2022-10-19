@@ -1,8 +1,8 @@
 .icon {
   vertical-align: middle;
 
-  img,
-  svg {
+  :deep(img),
+  :deep(svg) {
     width: 1em;
     height: 1em;
 
@@ -11,8 +11,8 @@
   }
 
   &.-inline {
-    img,
-    svg {
+    :deep(img),
+    :deep(svg) {
       &, path {
         fill: currentColor;
       }
@@ -28,19 +28,19 @@
   }
 
   &.-rotate-90 {
-    svg {
+    :deep(svg) {
       transform: rotate(90deg);
     }
   }
 
   &.-rotate-180 {
-    svg {
+    :deep(svg) {
       transform: rotate(180deg);
     }
   }
 
   &.-rotate-270 {
-    svg {
+    :deep(svg) {
       transform: rotate(-90deg);
     }
   }
@@ -48,8 +48,8 @@
   &[class*=-size-] {
     display: inline-block;
 
-    img,
-    svg {
+    :deep(img),
+    :deep(svg) {
       width: auto;
       height: 100%;
 

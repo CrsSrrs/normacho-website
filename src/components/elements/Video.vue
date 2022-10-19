@@ -6,6 +6,7 @@
           <RatioBox mode="video" class="-fullhd">
             <template v-slot:video>
               <iframe width="100%" height="100%" :src="`https://www.youtube-nocookie.com/embed/${id}`"
+                      loading="lazy"
                       frameborder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen></iframe>
@@ -17,18 +18,10 @@
   </section>
 </template>
 
-<script>
+<script setup lang="ts">
 import RatioBox from '@/components/elements/RatioBox.vue';
 
-export default {
-  name: 'Video',
-  props: {
-    id: String,
-  },
-  components: {
-    RatioBox,
-  },
-};
+defineProps<{
+  id: string,
+}>();
 </script>
-
-<style scoped lang="scss" src="@/sass/07_elements/video.scss"></style>

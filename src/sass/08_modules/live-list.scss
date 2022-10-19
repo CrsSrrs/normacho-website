@@ -13,12 +13,12 @@
 
     &::after {
       content: '';
-      width: calc(#{(3/$grid-columns * 100%)} - #{$grid-gutter-width});
+      width: calc(((3 / #{$grid-columns}) * 100%) - #{$grid-gutter-width});
       height: 3px;
       background-color: color(green, 400);
 
       position: absolute;
-      left: $grid-gutter-width/2;
+      left: $grid-gutter-width*0.5;
       bottom: 0;
     }
 
@@ -85,7 +85,7 @@
         width: 4px;
         height: 100%;
 
-        left: $grid-gutter-width/2;
+        left: $grid-gutter-width*0.5;
         top: 0;
         bottom: auto;
       }

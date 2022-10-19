@@ -12,15 +12,8 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import Timer from '@/components/elements/Timer.vue';
-
-export default {
-  name: 'InfoBar',
-  components: {
-    Timer,
-  },
-};
 </script>
 
 <style scoped lang="scss" src="@/sass/08_modules/info-bar.scss"></style>

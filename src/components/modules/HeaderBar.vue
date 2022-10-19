@@ -5,8 +5,8 @@
         <div class="col-3  col-sm-6  col-xs-4  valign-middle">
           <div class="row  text-center">
             <div class="col-5  col-xs-12  valign-middle">
-              <Logo href="/">
-                <img src="@/assets/logo_small_negative.png" alt="Normacho">
+              <Logo href="/" target="_self">
+                <img src="@/assets/logo_small_negative.webp" alt="Normacho">
               </Logo>
             </div>
             <div class="col-7  valign-middle  hide-xs">
@@ -26,15 +26,8 @@
   </header>
 </template>
 
-<script>
+<script setup lang="ts">
 import Logo from '@/components/atoms/Logo.vue';
-
-export default {
-  name: 'HeaderBar',
-  components: {
-    Logo,
-  },
-};
 </script>
 
 <style scoped lang="scss" src="@/sass/08_modules/header-bar.scss"></style>

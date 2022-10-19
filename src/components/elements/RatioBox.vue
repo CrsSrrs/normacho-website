@@ -1,8 +1,8 @@
 <template>
   <div class="ratio-box">
     <template v-if="mode === 'image'">
-      <div class="content" :style="{ backgroundImage: `url(${ require('@/assets/' + src) })` }" :key="src">
-        <img :src="require(`@/assets/${src}`)" :srcset="srcSetString" :sizes="sizes">
+      <div class="content" :key="src">
+        <img :src="imageSrc" loading="lazy">
       </div>
       <div class="overlay" v-if="overlay"></div>
       <div class="_text">
@@ -17,42 +17,17 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'RatioBox',
-  props: {
-    src: String,
-    srcset: Array,
-    sizes: String,
-    overlay: {
-      type: Boolean,
-      default: false,
-    },
-    mode: {
-      type: String,
-      default: 'image',
-    },
-  },
-  computed: {
-    srcSetString() {
-      if (this.srcset) {
-        let concatString = '';
-        this.srcset.forEach((srcset, index) => {
-          // eslint-disable-next-line
-          concatString += `${require(`@/assets/${srcset.src}`)} ${srcset.size}`;
+<script setup lang="ts">
+const props = withDefaults(defineProps<{
+  src?: string,
+  overlay?: boolean,
+  mode?: string,
+}>(), {
+  overlay: false,
+  mode: 'image',
+});
 
-          if (index + 1 < this.srcset.length) {
-            concatString += ', ';
-          }
-        });
-
-        return concatString;
-      }
-
-      return '';
-    },
-  },
-};
+const imageSrc = (props.src) ? new URL(`/src/assets/${props.src}`, import.meta.url).href : '';
 </script>
 
 <style scoped lang="scss" src="@/sass/07_elements/ratio-box.scss"></style>

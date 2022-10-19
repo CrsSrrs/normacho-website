@@ -2,6 +2,7 @@
  * Import all variables, mixins and functions,
  * to access them in all other .scss files
  */
+@use "sass:math";
 
 @import '00_functions/base';
 

@@ -4,7 +4,7 @@
     <div class="site-inner  mb-xl">
       <div class="row">
         <div class="col-5  col-sm-12  valign-middle  hide-sm">
-          <RatioBox src="normacho_shooting_may22_3.jpg" class="-three-quarters" :overlay="true"></RatioBox>
+          <RatioBox src="normacho_shooting_may22_3.webp" class="-three-quarters" :overlay="true"></RatioBox>
         </div>
         <div class="col-6  col-offset-1  col-sm-12  col-sm-offset-0  valign-middle">
           <h2 class="h5">Hä? Ok, genauer.</h2>
@@ -46,7 +46,7 @@
             <p>Seit Anfang 2020 spielen wir unter dem Namen Normacho zusammen. Wir profitieren von einschlägigen Bühnen- und Studioerfahrungen aus vorherigen Band-Projekten. Unser eingängiger Alternative Rock Sound wird maßgeblich von Einflüssen aus Blues-Rock, Gypsy Swing und einem kleinen Bisschen Pop-Rock geprägt. So divers, wie wir selbst, sind auch unsere Songs: deutsche und englische Texte; Themen zum feiern, lachen und weinen; harte Sounds und weiche Klänge geben sich in unseren Sets die Hand.</p>
           </div>
           <div class="col-5  col-offset-1  col-sm-12  col-sm-offset-0  valign-middle">
-            <RatioBox src="normacho_shooting_may22_1.jpg" class="-three-quarters" :overlay="true"></RatioBox>
+            <RatioBox src="normacho_shooting_may22_1.webp" class="-three-quarters" :overlay="true"></RatioBox>
           </div>
         </div>
       </div>
@@ -54,23 +54,11 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import AnchorLink from '@/components/atoms/Link.vue';
 import HeroStage from '@/components/modules/HeroStage.vue';
 import LiveList from '@/components/modules/LiveList.vue';
 import MusicInsight from '@/components/modules/MusicInsight.vue';
 import RatioBox from '@/components/elements/RatioBox.vue';
 import Video from '@/components/elements/Video.vue';
-
-export default {
-  name: 'Home',
-  components: {
-    AnchorLink,
-    HeroStage,
-    LiveList,
-    MusicInsight,
-    RatioBox,
-    Video,
-  },
-};
 </script>

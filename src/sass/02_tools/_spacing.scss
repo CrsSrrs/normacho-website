@@ -6,5 +6,5 @@
   $font: map-get(map-get($font-sizes, $viewport), $font-size);
   $font-size: nth($font, 1);
   $line-height: nth($font, 2);
-  @return (($base-spacing * $multiplier) * map-get($spacing, $value)) - (($line-height - $font-size) / 2);
+  @return (($base-spacing * $multiplier) * map-get($spacing, $value)) - (($line-height - $font-size) * 0.5);
 }

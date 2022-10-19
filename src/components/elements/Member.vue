@@ -3,7 +3,7 @@
     <div class="site-inner">
       <div class="row">
         <div class="col-3  col-xs-6  col-xs-offset-3  valign-middle  text-center">
-          <img class="_illu" :src="require(`@/assets/band/${name}_geometrized.png`)">
+          <img class="_illu" :src="`@/assets/band/${name}_geometrized.webp`" loading="lazy">
         </div>
         <div class="col-5  col-offset-1  col-xs-12  col-xs-offset-0  valign-middle  -pulled">
           <div class="_content">
@@ -18,18 +18,12 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import RatioBox from '@/components/elements/RatioBox.vue';
 
-export default {
-  name: 'Member',
-  props: {
-    name: String,
-  },
-  components: {
-    RatioBox,
-  },
-};
+defineProps<{
+  name: string,
+}>();
 </script>
 
 <style scoped lang="scss" src="@/sass/07_elements/member.scss"></style>

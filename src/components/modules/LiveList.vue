@@ -56,10 +56,7 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'LiveList',
-};
+<script setup lang="ts">
 </script>
 
 <style scoped lang="scss" src="@/sass/08_modules/live-list.scss"></style>

@@ -10,16 +10,16 @@
         <div class="col-7  col-offset-1  col-sm-12  col-sm-offset-0">
           <div class="band-stage">
             <div class="band-illu">
-              <div class="_front" :class="{ '-active': selected >= 0 }">
-                <a v-for="(member, index) in members" :key="member.slug" @click="setActiveMember(index)" :class="{ '-active': selected === index }">
-                  <img :src="require(`@/assets/band/${member.slug}_geometrized.png`)">
+              <div class="_front" :class="{ '-active': state.selected >= 0 }">
+                <a v-for="(member, index) in members" :key="member.slug" @click="setActiveMember(index)" :class="{ '-active': state.selected === index }">
+                  <img :src="imageSrc(`${member.slug}_geometrized.webp`)" loading="lazy">
                 </a>
               </div>
-              <img class="_mid" src="@/assets/band_front_geometrized.png">
-              <img class="_back" src="@/assets/band_back.png">
+              <img class="_mid" src="@/assets/band_front_geometrized.webp" rel="preload">
+              <img class="_back" src="@/assets/band_back.webp" rel="preload">
             </div>
-            <div class="member-info" :class="{ '-active' : selected >= 0 }">
-              <div class="_member" v-for="(member, index) in members" :key="member.slug" :class="{ '-active' : selected === index }" @click="setActiveMember(index)">
+            <div class="member-info" :class="{ '-active' : state.selected >= 0 }">
+              <div class="_member" v-for="(member, index) in members" :key="member.slug" :class="{ '-active' : state.selected === index }" @click="setActiveMember(index)">
                 <div class="_wrap">
                   <h4>{{ member.name }}</h4>
                   <h6>{{ member.role }}</h6>
@@ -28,9 +28,9 @@
             </div>
           </div>
         </div>
-        <div class="member-image" :class="{ '-active' : selected >= 0 }">
-          <div class="_img" v-for="(member, index) in members" :key="member.slug" :class="{ '-active' : selected === index }">
-            <img :src="require(`@/assets/band/${member.slug}.jpg`)">
+        <div class="member-image" :class="{ '-active' : state.selected >= 0 }">
+          <div class="_img" v-for="(member, index) in members" :key="member.slug" :class="{ '-active' : state.selected === index }">
+            <img :src="imageSrc(`${member.slug}.webp`)" loading="lazy">
           </div>
         </div>
       </div>
@@ -38,55 +38,50 @@
   </section>
 </template>
 
-<script>
+<script setup lang="ts">
+import { reactive } from 'vue';
 import AnchorLink from '@/components/atoms/Link.vue';
 
-export default {
-  name: 'HeroStage',
-  data() {
-    return {
-      selected: -1,
-      members: [
-        {
-          slug: 'fabi',
-          name: 'Fabi',
-          role: 'Gesang',
-        },
-        {
-          slug: 'ara',
-          name: 'Ara',
-          role: 'Drums',
-        },
-        {
-          slug: 'lorenzo',
-          name: 'Lorenzo',
-          role: 'Gitarre',
-        },
-        {
-          slug: 'matcho',
-          name: 'Matcho',
-          role: 'Gitarre',
-        },
-        {
-          slug: 'chris',
-          name: 'Chris',
-          role: 'Bass',
-        },
-      ],
-    };
+const state = reactive({
+  selected: -1,
+});
+
+const members = [
+  {
+    slug: 'fabi',
+    name: 'Fabi',
+    role: 'Gesang',
   },
-  methods: {
-    setActiveMember(index) {
-      if (this.selected === index) this.selected = -1;
-      else {
-        this.selected = index;
-      }
-    },
+  {
+    slug: 'ara',
+    name: 'Ara',
+    role: 'Drums',
   },
-  components: {
-    AnchorLink,
+  {
+    slug: 'lorenzo',
+    name: 'Lorenzo',
+    role: 'Gitarre',
   },
-};
+  {
+    slug: 'matcho',
+    name: 'Matcho',
+    role: 'Gitarre',
+  },
+  {
+    slug: 'chris',
+    name: 'Chris',
+    role: 'Bass',
+  },
+];
+
+const imageSrc = (file) => new URL(`/src/assets/band/${file}`, import.meta.url).href;
+
+function setActiveMember(index: number) {
+  if (state.selected === index) state.selected = -1;
+  else {
+    state.selected = index;
+  }
+}
 </script>
 
 <style scoped lang="scss" src="@/sass/08_modules/hero-stage.scss"></style>

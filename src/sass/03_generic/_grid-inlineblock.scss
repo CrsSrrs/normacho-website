@@ -2,10 +2,12 @@
   GRID INLINEBLOCK
 \*------------------------------------*/
 
+@use "sass:math";
+
 @mixin grid-inlineblock() {
   .row {
-    margin-right: -$grid-gutter-width/2;
-    margin-left: -$grid-gutter-width/2;
+    margin-right: -$grid-gutter-width*0.5;
+    margin-left: -$grid-gutter-width*0.5;
     letter-spacing: -0.31em;
   }
   $grid-classes: '';
@@ -22,12 +24,12 @@
   }
   @for $i from 0 through $grid-columns {
     .col-offset-#{$i} {
-      margin-left: #{($i / $grid-columns) * 100%};
+      margin-left: #{math.div($i, $grid-columns) * 100%};
     }
   }
   @for $i from 0 through $grid-columns {
     .col-pull-#{$i} {
-      margin-left: #{($i / $grid-columns) * (-1) * 100%};
+      margin-left: #{math.div($i, $grid-columns) * (-1) * 100%};
     }
   }
   @each $device,
@@ -44,12 +46,12 @@
       }
       @for $i from 0 through $grid-columns {
         .col-#{$device}-offset-#{$i} {
-          margin-left: #{($i / $grid-columns) * 100%};
+          margin-left: #{math.div($i, $grid-columns) * 100%};
         }
       }
       @for $i from 0 through $grid-columns {
         .col-#{$device}-pull-#{$i} {
-          margin-left: #{($i / $grid-columns) * (-1) * 100%};
+          margin-left: #{math.div($i, $grid-columns) * (-1) * 100%};
         }
       }
     }
@@ -64,14 +66,14 @@
       margin: 0;
 
       &:not(.-full-width) {
-        padding-left: $grid-gutter-width/2;
-        padding-right: $grid-gutter-width/2;
+        padding-left: $grid-gutter-width*0.5;
+        padding-right: $grid-gutter-width*0.5;
 
         .row {
           padding-left: 0;
           padding-right: 0;
-          margin-right: -$grid-gutter-width/2;
-          margin-left: -$grid-gutter-width/2;
+          margin-right: -$grid-gutter-width*0.5;
+          margin-left: -$grid-gutter-width*0.5;
         }
       }
 
@@ -87,8 +89,8 @@
 }
 
 @mixin grid-inlineblock-basics {
-  padding-right: $grid-gutter-width/2;
-  padding-left: $grid-gutter-width/2;
+  padding-right: $grid-gutter-width*0.5;
+  padding-left: $grid-gutter-width*0.5;
   letter-spacing: normal;
   word-spacing: normal;
   display: inline-block;
@@ -96,5 +98,5 @@
 }
 
 @mixin grid-inlineblock-col($i) {
-  width: #{($i / $grid-columns) * 100%};
+  width: #{math.div($i, $grid-columns) * 100%};
 }

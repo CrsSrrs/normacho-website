@@ -9,7 +9,7 @@
     height: 100%;
   }
 
-  img {
+  :deep(img) {
     max-width: 90px;
     display: block;
   }
@@ -23,4 +23,3 @@ _:-ms-fullscreen, :root .logo {
     height: 62px;
   }
 }
-

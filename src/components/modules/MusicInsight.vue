@@ -9,10 +9,10 @@
         </div>
         <div class="col-6  text-right  mb-m">
           <Button class="-spotify  mb-xs" href="https://open.spotify.com/artist/6Wd84liOOuWgnc7fFlH8kC?si=wVSKDwLxQGGYOlgT6w9-hg" target="_blank">
-            <Icon class="-size-32"><SpotifySVG></SpotifySVG></Icon>
+            <Icon class="-size-32"><SpotifySVG /></Icon>
           </Button>
           <Button class="-apple-music  mb-xs" href="https://music.apple.com/ca/artist/normacho/1617987361" target="_blank">
-            <Icon class="-size-32"><AppleMusicSVG></AppleMusicSVG></Icon>
+            <Icon class="-size-32"><AppleMusicSVG /></Icon>
           </Button>
         </div>
       </div>
@@ -30,24 +30,13 @@
   </section>
 </template>
 
-<script>
+<script setup lang="ts">
 import AudioPlayer from '@/components/elements/AudioPlayer.vue';
 import Button from '@/components/atoms/Button.vue';
 import Icon from '@/components/atoms/Icon.vue';
 
-import AppleMusicSVG from '@/assets/icons/applemusic.svg';
-import SpotifySVG from '@/assets/icons/spotify.svg';
-
-export default {
-  name: 'MusicInsight',
-  components: {
-    AudioPlayer,
-    Button,
-    Icon,
-    AppleMusicSVG,
-    SpotifySVG,
-  },
-};
+import AppleMusicSVG from '@/assets/icons/applemusic.svg?component';
+import SpotifySVG from '@/assets/icons/spotify.svg?component';
 </script>
 
 <style scoped lang="scss" src="@/sass/08_modules/music-insight.scss"></style>

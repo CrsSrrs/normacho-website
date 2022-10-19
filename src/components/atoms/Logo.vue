@@ -6,17 +6,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Logo',
-  props: {
-    href: String,
-    target: {
-      type: String,
-      default: '_self',
-    },
-  },
-};
+<script setup lang="ts">
+withDefaults(defineProps<{
+  href?: string,
+  target?: string
+}>(), {
+  target: '_self',
+});
 </script>
 
 <style scoped lang="scss" src="@/sass/06_atoms/logo.scss"></style>

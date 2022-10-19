@@ -38,7 +38,7 @@
     opacity: .7;
     pointer-events: none;
 
-    ::v-deep canvas {
+    :deep(canvas) {
       width: 150%;
       display: block;
 

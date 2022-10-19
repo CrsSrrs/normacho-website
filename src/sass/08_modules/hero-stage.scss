@@ -177,7 +177,7 @@
   }
 
   .member-image {
-    width: 100% * (4/$grid-columns);
+    width: calc(100% * (4 / $grid-columns));
     height: 100%;
 
     position: absolute;
@@ -275,7 +275,7 @@
 
       &::before {
         width: calc(100% + #{$grid-gutter-width});
-        left: ($grid-gutter-width/2) * (-1)
+        left: ($grid-gutter-width*0.5) * (-1)
       }
 
       &::after {

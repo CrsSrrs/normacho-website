@@ -14,8 +14,18 @@
       </div>
       <div class="_list">
         <div class="row  _item">
+          <div class="col-12 mt-s mb-xs">
+            <div class="_location">Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter <a href="mailto:band@normacho.de">band@normacho.de</a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h6 class="h6  mt-m">Vergangene Events</h6>
+          </div>
+        </div>
+        <div class="row  _item  -expired">
           <div class="col-2  col-xs-4">
-            <div class="_date">29.10.<span class="_year">2022</span><span class="_additional">ab 18:30 Uhr, Eintritt: 3€</span></div>
+            <div class="_date">29.10.<span class="_year">2022</span><span class="_additional"></span></div>
           </div>
           <div class="col-4  col-xs-8">
             <div class="_title">Benefiz Rock Konzert</div>
@@ -28,11 +38,6 @@
             <div class="_link">
               <a class="link" href="https://spilles.de/abendbereich/veranstaltungen/konzerte/" target="_blank">Zum Event</a>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h6 class="h6  mt-m">Vergangene Events</h6>
           </div>
         </div>
         <div class="row  _item  -expired">

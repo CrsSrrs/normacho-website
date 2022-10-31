@@ -3,9 +3,9 @@
     <div class="site-inner">
       <div class="row">
         <div class="col-12  text-center">
-          <p><b>Benefiz Rock Konzert</b> in Düsseldorf Benrath &ndash; am <b>29.10. ab 18:30 Uhr</b></p>
-          <p><Timer starttime="October 29, 2022 18:30:00" endtime="October 29, 2022 23:59:59"></Timer></p>
-          <a class="link  -light" href="https://spilles.de/abendbereich/veranstaltungen/konzerte" target="_blank">Zum Event</a>
+          <p>Danke fürs zahlreiche Erscheinen beim <b>Benefiz Rock Konzert</b> im Spilles!</p>
+          <!--<p><Timer starttime="October 29, 2022 18:30:00" endtime="October 29, 2022 23:59:59"></Timer></p>-->
+          <a class="link  -light" href="https://instagram.com/normacho_band" target="_blank">Insights vom Gig in den Highlights</a>
         </div>
       </div>
     </div>

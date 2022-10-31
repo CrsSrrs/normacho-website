@@ -72,12 +72,11 @@
             Dritte ist nicht m&ouml;glich.</p>
           <h3>Hinweis zur verantwortlichen Stelle</h3>
           <p>Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf dieser Website ist:</p>
-          <p>Beispielfirma<br />
-            Musterweg 10<br />
-            90210 Musterstadt</p>
+          <p>Lorenzo Vampiro<br />
+            Gutenbergstraße 60<br />
+            45128 Essen</p>
 
-          <p>Telefon: +49 (0) 123 44 55 66<br />
-            E-Mail: info@beispielfirma.de</p>
+          <p>E-Mail: band@normacho.de</p>
           <p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit
             anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen,
             E-Mail-Adressen o. &Auml;.) entscheidet.</p>

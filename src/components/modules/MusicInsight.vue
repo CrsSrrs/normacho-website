@@ -18,6 +18,12 @@
       </div>
       <div class="row">
         <div class="col-12">
+          <div class="cookieconsent-optout-marketing">
+            <p class="mb-m">
+              Um die Spotify-Einbindung zu aktivieren
+              <a href="javascript:Cookiebot.renew()">akzeptiere unsere Marketing-Cookies.</a>
+            </p>
+          </div>
           <audio-player class="mb-m" src="0wjxUc1Vuv7ySE0N4t2SYF" embed name="Feuervögel"></audio-player>
           <audio-player class="mb-m" src="5SH0WHtDj9NFC83Cff03Lq" embed name="Pentatonic Rockbar"></audio-player>
           <audio-player class="mb-m" src="7jlyQhpIjqgpq8nmq82k6y" embed name="Life's A River"></audio-player>

@@ -11,6 +11,10 @@ export default createRouter({
     {
       path: '/impressum',
       component: () => import('@/views/Imprint.vue'),
+    },
+    {
+      path: '/datenschutz',
+      component: () => import('@/views/Privacy.vue'),
     }
   ],
   scrollBehavior(to, from, savedPosition) {

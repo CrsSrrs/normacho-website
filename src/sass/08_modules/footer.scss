@@ -13,8 +13,10 @@ footer {
 
 a {
   margin-right: spacing(xs);
-  display: inline-block;
-  color: color(grey, 100);
+  margin-bottom: spacing(xxs);
+  display: block;
+  color: color(green, 300);
+  text-decoration: none;
 
   transition: color .4s ease;
 

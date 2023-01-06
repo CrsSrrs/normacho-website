@@ -13,9 +13,43 @@
         <div class="col-2"></div>
       </div>
       <div class="_list">
-        <div class="row  _item">
+        <div class="row  _item" v-if="false">
           <div class="col-12 mt-s mb-xs">
             <div class="_location pl-xs-xs">Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter <a href="mailto:band@normacho.de">band@normacho.de</a></div>
+          </div>
+        </div>
+        <div class="row  _item">
+          <div class="col-2  col-xs-4">
+            <div class="_date">15.04.<span class="_year">2023</span><span class="_additional">Einlass: T.B.D.</span></div>
+          </div>
+          <div class="col-4  col-xs-8">
+            <div class="_title">Bandabend</div>
+            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs"></p>
+          </div>
+          <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
+            <div class="_location"><a href="https://g.page/hausspilles?share" target="_blank">Spilles</a> Düsseldorf</div>
+          </div>
+          <div class="col-2  col-xs-8  col-xs-offset-4">
+            <div class="_link">
+              <a class="link" href="https://spilles.de/abendbereich/veranstaltungen/konzerte/" target="_blank">Weitere Infos</a>
+            </div>
+          </div>
+        </div>
+        <div class="row  _item">
+          <div class="col-2  col-xs-4">
+            <div class="_date">18.11.<span class="_year">2023</span><span class="_additional">Einlass: T.B.D.</span></div>
+          </div>
+          <div class="col-4  col-xs-8">
+            <div class="_title">Support für die <a href="https://ochmoneks.de/" target="_blank">Ochmoneks</a></div>
+            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs"></p>
+          </div>
+          <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
+            <div class="_location"><a href="https://goo.gl/maps/v3gtna94Q231XRdM8" target="_blank">The Tube Club</a> Düsseldorf</div>
+          </div>
+          <div class="col-2  col-xs-8  col-xs-offset-4">
+            <div class="_link">
+              <a class="link" href="https://de-de.facebook.com/the.tube.duesseldorf/" target="_blank">Weitere Infos</a>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -36,7 +70,7 @@
           </div>
           <div class="col-2  col-xs-8  col-xs-offset-4">
             <div class="_link">
-              <a class="link" href="https://spilles.de/abendbereich/veranstaltungen/konzerte/" target="_blank">Zum Event</a>
+              <a class="link" href="https://www.instagram.com/p/CkbPA6msjhD/" target="_blank">Zu den Bildern</a>
             </div>
           </div>
         </div>

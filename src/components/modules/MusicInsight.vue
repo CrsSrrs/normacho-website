@@ -24,12 +24,11 @@
               <a href="javascript:Cookiebot.renew()">akzeptiere unsere Marketing-Cookies.</a>
             </p>
           </div>
+          <audio-player class="mb-m" src="664DJg3wZhabc8fpY49IIl" embed name="Gypsy Life"></audio-player>
           <audio-player class="mb-m" src="0wjxUc1Vuv7ySE0N4t2SYF" embed name="Feuervögel"></audio-player>
           <audio-player class="mb-m" src="5SH0WHtDj9NFC83Cff03Lq" embed name="Pentatonic Rockbar"></audio-player>
           <audio-player class="mb-m" src="7jlyQhpIjqgpq8nmq82k6y" embed name="Life's A River"></audio-player>
           <audio-player class="mb-m" src="0IN1KpedbX4U06B51GPOuB" embed name="A.N.X."></audio-player>
-          <!--<audio-player class="mb-m" src="3ErMQ97ghhE6Booo0Dnawi" embed name="Totgesagte"></audio-player>-->
-          <!--<audio-player class="" src="27KDp9FUYbdrI301unkVLQ" embed name="Sturmkind"></audio-player>-->
         </div>
       </div>
     </div>

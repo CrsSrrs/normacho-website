@@ -1,13 +1,13 @@
 <template>
   <section class="music-insight">
     <div class="site-inner">
-      <div class="row  mb-m">
-        <div class="col-6">
+      <div class="row  mb-m  mb-xs-s">
+        <div class="col-6  col-xs-12">
           <h5 class="h5  mb-m">
             Ne Hörprobe? Klar.
           </h5>
         </div>
-        <div class="col-6  text-right  mb-m">
+        <div class="col-6  col-xs-12  text-right  mb-m  mb-xs-s">
           <Button class="-spotify  mb-xs" href="https://open.spotify.com/artist/6Wd84liOOuWgnc7fFlH8kC?si=wVSKDwLxQGGYOlgT6w9-hg" target="_blank">
             <Icon class="-size-32"><SpotifySVG /></Icon>
           </Button>

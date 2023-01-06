@@ -19,3 +19,21 @@
     }
   }
 }
+
+@include breakpoint(xs) {
+  .music-insight {
+    padding-bottom: spacing(l);
+
+    .text-right {
+      text-align: left;
+    }
+
+    .button {
+      &.-spotify, &.-apple-music, &.-youtube-music {
+        .icon {
+          height: 24px;
+        }
+      }
+    }
+  }
+}

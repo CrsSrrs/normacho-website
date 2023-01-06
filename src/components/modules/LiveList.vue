@@ -15,7 +15,7 @@
       <div class="_list">
         <div class="row  _item">
           <div class="col-12 mt-s mb-xs">
-            <div class="_location">Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter <a href="mailto:band@normacho.de">band@normacho.de</a></div>
+            <div class="_location pl-xs-xs">Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter <a href="mailto:band@normacho.de">band@normacho.de</a></div>
           </div>
         </div>
         <div class="row">

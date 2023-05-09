@@ -2,7 +2,7 @@
   <span class="timer">
     <span v-if="!state.live && !state.expired">in {{ timer.days }}d {{ timer.hours }}h {{ timer.minutes }}m {{ timer.seconds }}s</span>
     <span v-if="state.live && !state.expired" class="live"><b>&bull; LIVE</b></span>
-    <span v-if="state.expired">Das Konzert ist vorbei!</span>
+    <span v-if="state.expired">LIVE</span>
     <!--<span v-if="state.live || state.expired"><b>Jetzt live!</b></span>-->
   </span>
 </template>

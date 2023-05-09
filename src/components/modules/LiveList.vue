@@ -20,23 +20,6 @@
         </div>
         <div class="row  _item">
           <div class="col-2  col-xs-4">
-            <div class="_date">15.04.<span class="_year">2023</span><span class="_additional">Einlass: T.B.D.</span></div>
-          </div>
-          <div class="col-4  col-xs-8">
-            <div class="_title">Bandabend</div>
-            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs"></p>
-          </div>
-          <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
-            <div class="_location"><a href="https://g.page/hausspilles?share" target="_blank">Spilles</a> Düsseldorf</div>
-          </div>
-          <div class="col-2  col-xs-8  col-xs-offset-4">
-            <div class="_link">
-              <a class="link" href="https://spilles.de/abendbereich/veranstaltungen/konzerte/" target="_blank">Weitere Infos</a>
-            </div>
-          </div>
-        </div>
-        <div class="row  _item">
-          <div class="col-2  col-xs-4">
             <div class="_date">18.11.<span class="_year">2023</span><span class="_additional">Einlass: T.B.D.</span></div>
           </div>
           <div class="col-4  col-xs-8">
@@ -55,6 +38,23 @@
         <div class="row">
           <div class="col-12">
             <h6 class="h6  mt-m">Vergangene Events</h6>
+          </div>
+        </div>
+        <div class="row  _item  -expired">
+          <div class="col-2  col-xs-4">
+            <div class="_date">15.04.<span class="_year">2023</span><span class="_additional"></span></div>
+          </div>
+          <div class="col-4  col-xs-8">
+            <div class="_title">Bandabend</div>
+            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs">Gemeinsam mit <a href="https://www.sonzband.de/" target="_blank">SonZ</a> und <a href="https://www.instagram.com/cosmicmarauderband/" target="_blank">Cosmic Marauder</a> die Bühne rocken!</p>
+          </div>
+          <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
+            <div class="_location"><a href="https://g.page/hausspilles?share" target="_blank">Spilles</a> Düsseldorf</div>
+          </div>
+          <div class="col-2  col-xs-8  col-xs-offset-4">
+            <div class="_link">
+              <a class="link" href="https://www.instagram.com/p/CrGZTJ_t1Xz/" target="_blank">Zu den Bildern</a>
+            </div>
           </div>
         </div>
         <div class="row  _item  -expired">

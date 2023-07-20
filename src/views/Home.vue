@@ -17,7 +17,7 @@
     <section id="youtube" class="mb-xl">
       <div class="site-inner">
         <div class="row  mb-m">
-          <div class="col-4  col-sm-12  mb-sm-m">
+          <div class="col-6  col-sm-12  mb-sm-m">
             <h5>
               Mehr? Na gut.
             </h5>
@@ -28,10 +28,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-6  col-sm-12  mb-sm-xs">
+          <div class="col-12  col-sm-12  mb-xs">
+            <Video id="CsXyLVvOoZQ"></Video>
+          </div>
+          <div class="col-6  col-xs-12  mb-xs-xs">
             <Video id="gtE6BaqEpO4"></Video>
           </div>
-          <div class="col-6  col-sm-12">
+          <div class="col-6  col-xs-12">
             <Video id="oKcIwJUN9jg"></Video>
           </div>
         </div>

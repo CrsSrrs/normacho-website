@@ -20,18 +20,18 @@
         </div>
         <div class="row  _item">
           <div class="col-2  col-xs-4">
-            <div class="_date">18.11.<span class="_year">2023</span><span class="_additional">Einlass: T.B.D.</span></div>
+            <div class="_date">26.08.<span class="_year">2023</span><span class="_additional">ab 13:00 Uhr</span></div>
           </div>
           <div class="col-4  col-xs-8">
-            <div class="_title">Support für die <a href="https://ochmoneks.de/" target="_blank">Ochmoneks</a></div>
-            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs"></p>
+            <div class="_title">Rhein-Rock OpenAir 2023</div>
+            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs">Es erwarten euch 9 Bands, günstige Preise, viel ehrenamtliche Arbeit und eine entspannte Atmosphäre.</p>
           </div>
           <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
-            <div class="_location"><a href="https://goo.gl/maps/v3gtna94Q231XRdM8" target="_blank">The Tube Club</a> Düsseldorf</div>
+            <div class="_location"><a href="https://goo.gl/maps/KD15ZD6LGWWQD2mt9?coh=178571&entry=tt" target="_blank">Monheim am Rhein</a></div>
           </div>
           <div class="col-2  col-xs-8  col-xs-offset-4">
             <div class="_link">
-              <a class="link" href="https://de-de.facebook.com/the.tube.duesseldorf/" target="_blank">Weitere Infos</a>
+              <a class="link" href="https://rhein-rock.de/events/rhein-rock-open-air-2023/" target="_blank">Zum Event</a>
             </div>
           </div>
         </div>

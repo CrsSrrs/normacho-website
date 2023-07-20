@@ -6,10 +6,6 @@
           <h3>Impressum</h3>
 
           <h5>Angaben gem&auml;&szlig; &sect; 5 TMG</h5>
-          <p>Lorenzo Vampiro<br />
-            Gutenbergstraße 60<br />
-            45128 Essen</p>
-
           <h5>Kontakt</h5>
           <p class="mb-l">E-Mail: band@normacho.de</p>
 

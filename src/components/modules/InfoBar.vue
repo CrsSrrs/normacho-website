@@ -3,9 +3,9 @@
     <div class="site-inner">
       <div class="row">
         <div class="col-12  text-center">
-          <p>Neue Single <strong>Baskerville Black</strong> am 19.05. auf Spotify und co.!</p>
-          <p><Timer starttime="May 19, 2023 00:00:01" endtime="May 19, 2023 23:59:59"></Timer></p>
-          <a class="link  -light" href="https://open.spotify.com/artist/6Wd84liOOuWgnc7fFlH8kC?si=OVnQlEMtRty4rZZ9ymrolA" target="_blank">Jetzt folgen</a>
+          <p>Live am <strong>26.08.</strong> beim <strong>Rhein-Rock OpenAir 2023</strong> in Monheim am Rhein!</p>
+          <p><Timer starttime="August 26, 2023 13:00:00" endtime="August 26, 2023 13:30:00"></Timer></p>
+          <a class="link  -light" href="https://rhein-rock.de/events/rhein-rock-open-air-2023/" target="_blank">Zum Ticket-Shop</a>
         </div>
       </div>
     </div>

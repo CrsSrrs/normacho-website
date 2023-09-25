@@ -3,7 +3,7 @@
     <div class="site-inner">
       <div class="row">
         <div class="col-12">
-          <h3 class="h5">Bock? Hier sind wir live.</h3>
+          <h3 class="h4">Bock? Hier sind wir live.</h3>
         </div>
       </div>
       <div class="row  hide-xs">
@@ -13,14 +13,19 @@
         <div class="col-2"></div>
       </div>
       <div class="_list">
-        <div class="row  _item" v-if="false">
+        <div class="row  _item" v-if="true">
           <div class="col-12 mt-s mb-xs">
             <div class="_location pl-xs-xs">Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter <a href="mailto:band@normacho.de">band@normacho.de</a></div>
           </div>
         </div>
-        <div class="row  _item">
+        <div class="row">
+          <div class="col-12">
+            <h6 class="h6  mt-m">Vergangene Events</h6>
+          </div>
+        </div>
+        <div class="row  _item  -expired">
           <div class="col-2  col-xs-4">
-            <div class="_date">26.08.<span class="_year">2023</span><span class="_additional">ab 13:00 Uhr</span></div>
+            <div class="_date">26.08.<span class="_year">2023</span><span class="_additional"></span></div>
           </div>
           <div class="col-4  col-xs-8">
             <div class="_title">Rhein-Rock OpenAir 2023</div>
@@ -31,13 +36,8 @@
           </div>
           <div class="col-2  col-xs-8  col-xs-offset-4">
             <div class="_link">
-              <a class="link" href="https://rhein-rock.de/events/rhein-rock-open-air-2023/" target="_blank">Zum Event</a>
+              <a class="link" href="https://www.instagram.com/p/CxN5sFgMdnG/" target="_blank">Zu den Bildern</a>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h6 class="h6  mt-m">Vergangene Events</h6>
           </div>
         </div>
         <div class="row  _item  -expired">

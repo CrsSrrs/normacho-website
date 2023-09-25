@@ -3,11 +3,20 @@
   padding-bottom: spacing(xxl);
   margin-bottom: spacing(l);
 
-  background-color: color(grey, 900);
-
   color: color(grey, 100);
+  background-color: color(grey, 900);
+  background-image: url(src/assets/guitar_closeup.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   position: relative;
+
+  .site-inner {
+    position: relative;
+    z-index: 1;
+  }
 
   .button {
     margin-right: spacing(xs);

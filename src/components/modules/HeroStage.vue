@@ -3,7 +3,7 @@
     <div class="site-inner">
       <div class="row  mb-l  pos-relative">
         <div class="col-4  col-sm-12  mb-sm-l">
-          <h1 class="h3">Wir machen Rockmusik. In Düsseldorf.</h1>
+          <h1 class="h2">Wir machen Rockmusik. In Düsseldorf.</h1>
           <p>Wir sind <strong>Normacho</strong>: 5 ganz normale Typen, die ganz normalen Alternative Rock machen. Wir machen auch ganz normale Bilder und Videos von uns.</p>
           <AnchorLink href="https://www.instagram.com/normacho_band/" target="_blank">Entdecke uns auf Instagram</AnchorLink>
         </div>

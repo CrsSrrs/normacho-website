@@ -16,11 +16,11 @@
     <MusicInsight id="music"></MusicInsight>
     <section id="youtube" class="mb-xl">
       <div class="site-inner">
-        <div class="row  mb-m">
+        <div class="row  mb-l">
           <div class="col-6  col-sm-12  mb-sm-m">
-            <h5>
+            <h4 class="h4">
               Mehr? Na gut.
-            </h5>
+            </h4>
             <p>
               Auf unserem YouTube-Kanal veröffentlichen wir Videoaufnahmen von unseren Proben. Auch unser Proberaum ist ganz normal.
             </p>
@@ -40,6 +40,7 @@
         </div>
       </div>
     </section>
+    <ParallaxImage></ParallaxImage>
     <LiveList></LiveList>
     <section class="mb-xl">
       <div class="site-inner">
@@ -64,4 +65,5 @@ import LiveList from '@/components/modules/LiveList.vue';
 import MusicInsight from '@/components/modules/MusicInsight.vue';
 import RatioBox from '@/components/elements/RatioBox.vue';
 import Video from '@/components/elements/Video.vue';
+import ParallaxImage from '@/components/modules/ParallaxImage.vue';
 </script>

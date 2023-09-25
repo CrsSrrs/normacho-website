@@ -3,9 +3,9 @@
     <div class="site-inner">
       <div class="row">
         <div class="col-12  text-center">
-          <p>Live am <strong>26.08.</strong> beim <strong>Rhein-Rock OpenAir 2023</strong> in Monheim am Rhein!</p>
-          <p><Timer starttime="August 26, 2023 13:00:00" endtime="August 26, 2023 13:30:00"></Timer></p>
-          <a class="link  -light" href="https://rhein-rock.de/events/rhein-rock-open-air-2023/" target="_blank">Zum Ticket-Shop</a>
+          <p>Danke <strong>Rhein-Rock OpenAir 2023</strong>! Es war uns ein Fest 🤘</p>
+          <p v-if="false"><Timer starttime="August 26, 2023 13:00:00" endtime="August 26, 2023 13:30:00"></Timer></p>
+          <a class="link  -light" href="https://www.instagram.com/p/CxN5sFgMdnG/" target="_blank">Zu den Bildern</a>
         </div>
       </div>
     </div>

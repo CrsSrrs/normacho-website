@@ -1,11 +1,12 @@
 <template>
   <section class="music-insight">
+    <Overlay op="8"></Overlay>
     <div class="site-inner">
       <div class="row  mb-m  mb-xs-s">
         <div class="col-6  col-xs-12">
-          <h5 class="h5  mb-m">
+          <h4 class="h4  mb-m">
             Ne Hörprobe? Klar.
-          </h5>
+          </h4>
         </div>
         <div class="col-6  col-xs-12  text-right  mb-m  mb-xs-s">
           <Button class="-spotify  mb-xs" href="https://open.spotify.com/artist/6Wd84liOOuWgnc7fFlH8kC?si=wVSKDwLxQGGYOlgT6w9-hg" target="_blank">
@@ -41,6 +42,7 @@
 import AudioPlayer from '@/components/elements/AudioPlayer.vue';
 import Button from '@/components/atoms/Button.vue';
 import Icon from '@/components/atoms/Icon.vue';
+import Overlay from '@/components/atoms/Overlay.vue';
 
 import AppleMusicSVG from '@/assets/icons/applemusic.svg?component';
 import SpotifySVG from '@/assets/icons/spotify.svg?component';

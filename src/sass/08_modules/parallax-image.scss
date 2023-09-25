@@ -1,0 +1,19 @@
+.parallax-image {
+  margin-bottom: spacing(xl);
+  height: 75vh;
+
+  background-image: url(src/assets/gig_rheinrock.webp);
+  background-color: color(grey, 900);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  position: relative;
+}
+
+@include breakpoint(sm) {
+  .parallax-image {
+    background-image: url(src/assets/fabi_closeup.webp);
+  }
+}

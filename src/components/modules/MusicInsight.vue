@@ -25,6 +25,7 @@
               <a href="javascript:Cookiebot.renew()">akzeptiere unsere Marketing-Cookies.</a>
             </p>
           </div>
+          <audio-player class="mb-m" src="5iss85SVnHBv2WH7cx1Wvj" embed name="Ziro"></audio-player>
           <audio-player class="mb-m" src="3LYw877S4j0vFB0FywZSWr" embed name="Weckdienst"></audio-player>
           <audio-player class="mb-m" src="1VI5KvTwAQeuzVrnklxDBV" embed name="Baskerville Black"></audio-player>
           <audio-player class="mb-m" src="664DJg3wZhabc8fpY49IIl" embed name="Gypsy Life"></audio-player>

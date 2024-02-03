@@ -22,20 +22,17 @@
               Mehr? Na gut.
             </h4>
             <p>
-              Auf unserem YouTube-Kanal veröffentlichen wir Videoaufnahmen von unseren Proben. Auch unser Proberaum ist ganz normal.
+              Auf unserem YouTube-Kanal veröffentlichen wir Videos zu unseren Songs und gelegentlich Videoaufnahmen von unseren Proben. Auch unser Proberaum ist ganz normal.
             </p>
             <a class="link" href="https://www.youtube.com/channel/UC43oiDJONOrc961W9uKGj0A" target="_blank">Check unseren YouTube-Kanal</a>
           </div>
         </div>
         <div class="row">
-          <div class="col-12  col-sm-12  mb-xs">
+          <div class="col-6  col-sm-12  mb-xs">
+            <Video id="sP7_rDZr4fo"></Video>
+          </div>
+          <div class="col-6  col-sm-12  mb-xs">
             <Video id="CsXyLVvOoZQ"></Video>
-          </div>
-          <div class="col-6  col-xs-12  mb-xs-xs">
-            <Video id="gtE6BaqEpO4"></Video>
-          </div>
-          <div class="col-6  col-xs-12">
-            <Video id="oKcIwJUN9jg"></Video>
           </div>
         </div>
       </div>

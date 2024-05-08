@@ -13,9 +13,26 @@
         <div class="col-2"></div>
       </div>
       <div class="_list">
-        <div class="row  _item" v-if="true">
+        <div class="row  _item" v-if="false">
           <div class="col-12 mt-s mb-xs">
             <div class="_location pl-xs-xs">Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter <a href="mailto:band@normacho.de">band@normacho.de</a></div>
+          </div>
+        </div>
+        <div class="row  _item  -expired">
+          <div class="col-2  col-xs-4">
+            <div class="_date">19.10.<span class="_year">2024</span><span class="_additional">Einlass: 19 Uhr, Eintritt: 4€ Abendkasse only</span></div>
+          </div>
+          <div class="col-4  col-xs-8">
+            <div class="_title">Rock your socks off</div>
+            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs">Gemeinsam mit <a href="https://www.backstagepro.de/musiker/jan-gruenheidt-singer-songwriter-guitarist-from-duesseldorf-acoustic-blues-rock-alternative-rock-country-saenger-gitarrist-mc-rapper-bassist-songwriter-bandleader-duesseldorf-GWNp8Zk6rF" target="_blank">Jan Grünheidt</a></p>
+          </div>
+          <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
+            <div class="_location"><a href="https://g.page/hausspilles?share" target="_blank">Spilles</a> Düsseldorf</div>
+          </div>
+          <div class="col-2  col-xs-8  col-xs-offset-4">
+            <div class="_link">
+              <a class="link" href="https://spilles.de/abendbereich/veranstaltungen/konzerte/" target="_blank">Zum Event</a>
+            </div>
           </div>
         </div>
         <div class="row">

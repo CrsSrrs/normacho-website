@@ -18,7 +18,7 @@
             <div class="_location pl-xs-xs">Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter <a href="mailto:band@normacho.de">band@normacho.de</a></div>
           </div>
         </div>
-        <div class="row  _item  -expired">
+        <div class="row  _item">
           <div class="col-2  col-xs-4">
             <div class="_date">19.10.<span class="_year">2024</span><span class="_additional">Einlass: 19 Uhr, Eintritt: 4€ Abendkasse only</span></div>
           </div>
@@ -32,6 +32,23 @@
           <div class="col-2  col-xs-8  col-xs-offset-4">
             <div class="_link">
               <a class="link" href="https://spilles.de/abendbereich/veranstaltungen/konzerte/" target="_blank">Zum Event</a>
+            </div>
+          </div>
+        </div>
+        <div class="row  _item">
+          <div class="col-2  col-xs-4">
+            <div class="_date">09.11.<span class="_year">2024</span><span class="_additional">Einlass: 18 Uhr, Eintritt: 6,50€, VVK per Mail</span></div>
+          </div>
+          <div class="col-4  col-xs-8">
+            <div class="_title">Musikerparty 2.0</div>
+            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs">u.a. mit <a href="https://www.instagram.com/liverlessband" target="_blank">Liverless</a>, H: Black, Ro!dig, JB</p>
+          </div>
+          <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
+            <div class="_location"><a href="https://maps.app.goo.gl/vJ7o5RdwLXKgWTzC8" target="_blank">Schützenplatz Vennhausen</a> Düsseldorf</div>
+          </div>
+          <div class="col-2  col-xs-8  col-xs-offset-4">
+            <div class="_link">
+              <a class="link" href="mailto:freedom-jack@web.de" target="_blank">Jetzt Karten holen</a>
             </div>
           </div>
         </div>

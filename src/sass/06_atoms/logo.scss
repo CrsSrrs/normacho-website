@@ -32,3 +32,12 @@ _:-ms-fullscreen, :root .logo {
     }
   }
 }
+
+
+@include breakpoint(420px) {
+  .logo {
+    :deep(svg) {
+      height: 45px;
+    }
+  }
+}

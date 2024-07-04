@@ -47,5 +47,17 @@
       margin-left: spacing(xs);
     }
   }
+}
 
+
+@include breakpoint(420px) {
+  .nav-link {
+    &:not(:last-child) {
+      margin-right: spacing(xxs);
+    }
+
+    &:not(:first-child) {
+      margin-left: spacing(xxs);
+    }
+  }
 }

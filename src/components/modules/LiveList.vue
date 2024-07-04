@@ -20,7 +20,24 @@
         </div>
         <div class="row  _item">
           <div class="col-2  col-xs-4">
-            <div class="_date">19.10.<span class="_year">2024</span><span class="_additional">Einlass: 19 Uhr, Eintritt: 4€ Abendkasse only</span></div>
+            <div class="_date">20.07.<span class="_year">2024</span><span class="_additional">Einlass: 19:30 Uhr<br>Eintritt: 5€</span></div>
+          </div>
+          <div class="col-4  col-xs-8">
+            <div class="_title">Rhein-Rock präsentiert</div>
+            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs">Gemeinsam mit <a href="https://www.backseatalley.com/" target="_blank">Backseat Alley</a> und <a href="https://www.instagram.com/cleanslate.official/" target="_blank">Clean Slate</a></p>
+          </div>
+          <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
+            <div class="_location"><a href="https://maps.app.goo.gl/BEADCzi6EvyYL9nG8" target="_blank">Sojus 7</a>, Monheim</div>
+          </div>
+          <div class="col-2  col-xs-8  col-xs-offset-4">
+            <div class="_link">
+              <a class="link" href="https://rhein-rock.ticket.io/dbjjhnhd/" target="_blank">Zu den Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="row  _item">
+          <div class="col-2  col-xs-4">
+            <div class="_date">19.10.<span class="_year">2024</span><span class="_additional">Einlass: 19 Uhr<br>Eintritt: 4€, Abendkasse only</span></div>
           </div>
           <div class="col-4  col-xs-8">
             <div class="_title">Rock your socks off</div>
@@ -37,7 +54,7 @@
         </div>
         <div class="row  _item">
           <div class="col-2  col-xs-4">
-            <div class="_date">09.11.<span class="_year">2024</span><span class="_additional">Einlass: 18 Uhr, Eintritt: 6,50€, VVK per Mail</span></div>
+            <div class="_date">09.11.<span class="_year">2024</span><span class="_additional">Einlass: 18 Uhr<br>Eintritt: 6,50€, VVK per Mail</span></div>
           </div>
           <div class="col-4  col-xs-8">
             <div class="_title">Musikerparty 2.0</div>

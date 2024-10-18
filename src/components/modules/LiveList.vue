@@ -18,26 +18,10 @@
             <div class="_location pl-xs-xs">Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter <a href="mailto:band@normacho.de">band@normacho.de</a></div>
           </div>
         </div>
+
         <div class="row  _item">
           <div class="col-2  col-xs-4">
-            <div class="_date">05.10.<span class="_year">2024</span><span class="_additional">Einlass: 19 Uhr<br>Eintritt: 8€, Abendkasse only</span></div>
-          </div>
-          <div class="col-4  col-xs-8">
-            <div class="_title">Cube in Concert</div>
-            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs">Gemeinsam mit <a href="https://www.instagram.com/dailyhavoc/" target="_blank">Daily Havoc</a></p>
-          </div>
-          <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
-            <div class="_location"><a href="https://maps.app.goo.gl/8XqvBztuyK95Qos2A" target="_blank">Cube</a> Baumberg</div>
-          </div>
-          <div class="col-2  col-xs-8  col-xs-offset-4">
-            <div class="_link">
-              <a class="link" href="https://www.facebook.com/events/2244680995906414/?ref=newsfeed" target="_blank">Zum Event</a>
-            </div>
-          </div>
-        </div>
-        <div class="row  _item">
-          <div class="col-2  col-xs-4">
-            <div class="_date">19.10.<span class="_year">2024</span><span class="_additional">Einlass: 19 Uhr<br>Eintritt: 4€, Abendkasse only</span></div>
+            <div class="_date">19.10.<span class="_year">2024</span><span class="_additional">Einlass: 19 Uhr<br>Eintritt: 5€, Abendkasse only</span></div>
           </div>
           <div class="col-4  col-xs-8">
             <div class="_title">Rock your socks off</div>
@@ -76,7 +60,24 @@
         </div>
         <div class="row  _item -expired">
           <div class="col-2  col-xs-4">
-            <div class="_date">20.07.<span class="_year">2024</span><span class="_additional">Einlass: 19:30 Uhr<br>Eintritt: 5€</span></div>
+            <div class="_date">05.10.<span class="_year">2024</span><span class="_additional"></span></div>
+          </div>
+          <div class="col-4  col-xs-8">
+            <div class="_title">Cube in Concert</div>
+            <p class="mb-0  mb-xs-xxs  mt-xxs  font-size-xs">Gemeinsam mit <a href="https://www.instagram.com/dailyhavoc/" target="_blank">Daily Havoc</a></p>
+          </div>
+          <div class="col-4  col-xs-8  col-xs-offset-4  mb-xs-xs">
+            <div class="_location"><a href="https://maps.app.goo.gl/8XqvBztuyK95Qos2A" target="_blank">Cube</a> Baumberg</div>
+          </div>
+          <div class="col-2  col-xs-8  col-xs-offset-4">
+            <div class="_link">
+              <a class="link" href="https://www.instagram.com/normacho_band/p/DAyVgAbMBe4/" target="_blank">Zu den Bildern</a>
+            </div>
+          </div>
+        </div>
+        <div class="row  _item -expired">
+          <div class="col-2  col-xs-4">
+            <div class="_date">20.07.<span class="_year">2024</span><span class="_additional"></span></div>
           </div>
           <div class="col-4  col-xs-8">
             <div class="_title">Rhein-Rock präsentiert</div>
@@ -87,7 +88,7 @@
           </div>
           <div class="col-2  col-xs-8  col-xs-offset-4">
             <div class="_link">
-              <a class="link" href="https://rhein-rock.ticket.io/dbjjhnhd/" target="_blank">Zu den Tickets</a>
+              <a class="link" href="https://www.instagram.com/normacho_band/p/C9ufk7MsKOr/" target="_blank">Zu den Bildern</a>
             </div>
           </div>
         </div>

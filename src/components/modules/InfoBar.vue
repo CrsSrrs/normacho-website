@@ -3,9 +3,9 @@
     <div class="site-inner">
       <div class="row">
         <div class="col-12  text-center">
-          <p>Unser neuester Song <strong>She's A Dancer</strong> ist released!</p>
+          <p>Wir feiern den Release von <strong>Totgesagte</strong>!</p>
           <p v-if="false"><Timer starttime="August 26, 2023 13:00:00" endtime="August 26, 2023 13:30:00"></Timer></p>
-          <a class="link  -light" href="https://open.spotify.com/intl-de/track/5FkJcxIAnl7IBNjhfsX285?si=52121cd9b2d84ab4" target="_blank">Jetzt anhören</a>
+          <a class="link  -light" href="https://open.spotify.com/intl-de/track/4TZ0puvbZBQOE4CzvcVewX?si=4c07d6737e88454f" target="_blank">Jetzt anhören</a>
         </div>
       </div>
     </div>

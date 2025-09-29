@@ -25,11 +25,19 @@
           <div class="col-2 col-xs-4">
             <div class="_date">
               18.10.<span class="_year">2025</span
-              ><span class="_additional"></span>
+              ><span class="_additional">Eintritt: 18:30 Uhr, 5€</span>
             </div>
           </div>
           <div class="col-4 col-xs-8">
-            <div class="_title">Rock your socks off</div>
+            <div class="_title">Rock Wohnzimmer</div>
+            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
+              Gemeinsam mit
+              <a
+                href="https://www.instagram.com/tiefenbroich.underground/"
+                target="_blank"
+                >Tiefenbroich Underground</a
+              >
+            </p>
           </div>
           <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
             <div class="_location">
@@ -112,6 +120,31 @@
         <div class="row">
           <div class="col-12">
             <h6 class="h6 mt-l">Vergangene Events</h6>
+          </div>
+        </div>
+        <div class="row _item -expired">
+          <div class="col-2 col-xs-4">
+            <div class="_date">
+              20.09.<span class="_year">2025</span
+              ><span class="_additional"></span>
+            </div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Rock am Bach</div>
+            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">Umsonst und draußen, Düsseldorf</div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a
+                class="link"
+                href="https://www.youtube.com/live/uysO7bHQqzo?si=8TPq0vkRHFIcweBl&t=6h39m27s"
+                target="_blank"
+                >Zur Aufzeichnung</a
+              >
+            </div>
           </div>
         </div>
         <div class="row _item -expired">

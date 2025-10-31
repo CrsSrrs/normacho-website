@@ -3,16 +3,14 @@
     <div class="site-inner">
       <div class="row">
         <div class="col-12 text-center">
-          <p>Wir spielen live im Spilles, Cube und Sojus7!</p>
-          <p v-if="true">
+          <p>Wir feiern den Release von "Last Decade"!</p>
+          <p v-if="false">
             <Timer
               starttime="October 18, 2025 18:30:00"
               endtime="October 18, 2025 22:00:00"
             ></Timer>
           </p>
-          <router-link class="link -light" to="/#live"
-            >Zu den Konzert Infos</router-link
-          >
+          <router-link class="link -light" to="/#music">Reinhören</router-link>
         </div>
       </div>
     </div>

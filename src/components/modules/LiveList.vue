@@ -24,74 +24,8 @@
         <div class="row _item">
           <div class="col-2 col-xs-4">
             <div class="_date">
-              18.10.<span class="_year">2025</span
-              ><span class="_additional">Eintritt: 18:30 Uhr, 5€</span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rock Wohnzimmer</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
-              Gemeinsam mit
-              <a
-                href="https://www.instagram.com/tiefenbroich.underground/"
-                target="_blank"
-                >Tiefenbroich Underground</a
-              >
-            </p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a href="https://g.page/hausspilles?share" target="_blank"
-                >Spilles</a
-              >, Düsseldorf
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://spilles.de/abendbereich/veranstaltungen/konzerte/"
-                target="_blank"
-                >Zum Veranstalter</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              25.10.<span class="_year">2025</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Cube in Concert</div>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/11kpdT5H4rkkSBhv8"
-                target="_blank"
-                >Cube</a
-              >, Baumberg
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.facebook.com/cubebaumberg/events"
-                target="_blank"
-                >Zum Veranstalter</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
               14.11.<span class="_year">2025</span
-              ><span class="_additional"></span>
+              ><span class="_additional">Eintritt: 19 Uhr, 10€ AK</span>
             </div>
           </div>
           <div class="col-4 col-xs-8">
@@ -119,7 +53,73 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <h6 class="h6 mt-l">Vergangene Events</h6>
+            <h5 class="h5 mt-l color-grey-700">Vergangene Events</h5>
+          </div>
+        </div>
+        <div class="row _item -expired">
+          <div class="col-2 col-xs-4">
+            <div class="_date">
+              25.10.<span class="_year">2025</span
+              ><span class="_additional"></span>
+            </div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Cube in Concert</div>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a
+                href="https://maps.app.goo.gl/11kpdT5H4rkkSBhv8"
+                target="_blank"
+                >Cube</a
+              >, Baumberg
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a
+                class="link"
+                href="https://www.instagram.com/normacho_band/p/DQP_g8RDFLT/"
+                target="_blank"
+                >Zu den Bildern</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row _item -expired">
+          <div class="col-2 col-xs-4">
+            <div class="_date">
+              18.10.<span class="_year">2025</span
+              ><span class="_additional"></span>
+            </div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Rock Wohnzimmer</div>
+            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
+              Gemeinsam mit
+              <a
+                href="https://www.instagram.com/tiefenbroich.underground/"
+                target="_blank"
+                >Tiefenbroich Underground</a
+              >
+            </p>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a href="https://g.page/hausspilles?share" target="_blank"
+                >Spilles</a
+              >, Düsseldorf
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a
+                class="link"
+                href="https://www.instagram.com/normacho_band/p/DP_MrARDD43/"
+                target="_blank"
+                >Zu den Bildern</a
+              >
+            </div>
           </div>
         </div>
         <div class="row _item -expired">

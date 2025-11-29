@@ -13,7 +13,7 @@
         <div class="col-2"></div>
       </div>
       <div class="_list">
-        <div class="row _item" v-if="false">
+        <div class="row _item" v-if="true">
           <div class="col-12 mt-s mb-xs">
             <div class="_location pl-xs-xs">
               Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter
@@ -21,12 +21,14 @@
             </div>
           </div>
         </div>
-        <div class="row _item">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="h5 mt-l color-grey-700">Vergangene Events</h5>
+          </div>
+        </div>
+        <div class="row _item -expired">
           <div class="col-2 col-xs-4">
-            <div class="_date">
-              14.11.<span class="_year">2025</span
-              ><span class="_additional">Eintritt: 19 Uhr, 10€ AK</span>
-            </div>
+            <div class="_date">14.11.<span class="_year">2025</span></div>
           </div>
           <div class="col-4 col-xs-8">
             <div class="_title">Rhein-Rock NOpenAir 2025</div>
@@ -44,16 +46,11 @@
             <div class="_link">
               <a
                 class="link"
-                href="https://rhein-rock.de/events/rhein-rock-open-air-2023/"
+                href="https://www.instagram.com/normacho_band/p/DRPavakjAV9/"
                 target="_blank"
-                >Zum Veranstalter</a
+                >Zu den Bildern</a
               >
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h5 class="h5 mt-l color-grey-700">Vergangene Events</h5>
           </div>
         </div>
         <div class="row _item -expired">

@@ -5,7 +5,7 @@
 
   color: color(grey, 100);
   background-color: color(grey, 900);
-  background-image: url(@/assets/guitar_closeup.webp);
+  background-image: url(@/assets/normacho_cube_bandback.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,7 +21,9 @@
   .button {
     margin-right: spacing(xs);
 
-    &.-spotify, &.-apple-music, &.-youtube-music {
+    &.-spotify,
+    &.-apple-music,
+    &.-youtube-music {
       .icon {
         width: auto;
       }
@@ -38,7 +40,9 @@
     }
 
     .button {
-      &.-spotify, &.-apple-music, &.-youtube-music {
+      &.-spotify,
+      &.-apple-music,
+      &.-youtube-music {
         .icon {
           height: 24px;
         }

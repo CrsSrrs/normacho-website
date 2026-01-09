@@ -13,11 +13,57 @@
         <div class="col-2"></div>
       </div>
       <div class="_list">
-        <div class="row _item" v-if="true">
+        <div class="row _item" v-if="false">
           <div class="col-12 mt-s mb-xs">
             <div class="_location pl-xs-xs">
               Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter
               <a href="mailto:band@normacho.de">band@normacho.de</a>
+            </div>
+          </div>
+        </div>
+        <div class="row _item">
+          <div class="col-2 col-xs-4">
+            <div class="_date">
+              24.01.<span class="_year">2026</span
+              ><span class="_additional"
+                >Einlass: 19 Uhr<br />
+                VVK: 15€, AK: 20€</span
+              >
+            </div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Support für Dystopera</div>
+            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
+              Delayed Album Release Concert von
+              <a href="https://www.instagram.com/dystopera/" target="_blank"
+                >Dystopera</a
+              >
+              mit Support von
+              <a
+                href="https://www.instagram.com/monarchistband/"
+                target="_blank"
+                >Monarchist</a
+              >
+              und Normacho
+            </p>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a
+                href="https://maps.app.goo.gl/1jhV7LXy3cjf39RG9"
+                target="_blank"
+                >Ratinger Hof</a
+              >, Düsseldorf
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a
+                class="link"
+                href="https://www.concertteam.de/events/dystopera-2026-01-24"
+                target="_blank"
+                >Mehr Infos</a
+              >
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-6 col-sm-12 valign-middle mb-sm-m">
           <RatioBox
-            src="normacho_cube_bandfoto.webp"
+            src="normacho_spilles_bandfoto.webp"
             class="-three-quarters"
             :overlay="true"
           ></RatioBox>
@@ -76,7 +76,7 @@
             class="col-6 col-offset-1 col-sm-12 col-sm-offset-0 valign-middle"
           >
             <RatioBox
-              src="normacho_spilles_bandfoto.webp"
+              src="normacho_ratinger-hof_bandfoto.webp"
               class="-three-quarters"
               :overlay="true"
             ></RatioBox>

@@ -3,7 +3,7 @@
     <div class="site-inner">
       <div class="row">
         <div class="col-12 text-center">
-          <p>Wir feiern den Release von "Last Decade"!</p>
+          <p>Wir feiern den Release von "Königsallee"!</p>
           <p v-if="false">
             <Timer
               starttime="October 18, 2025 18:30:00"

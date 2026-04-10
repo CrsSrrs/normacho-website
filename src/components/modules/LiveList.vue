@@ -24,12 +24,123 @@
         <div class="row _item">
           <div class="col-2 col-xs-4">
             <div class="_date">
-              24.01.<span class="_year">2026</span
-              ><span class="_additional"
-                >Einlass: 19 Uhr<br />
-                VVK: 15€, AK: 20€</span
+              30.05.<span class="_year">2026</span
+              ><span class="_additional"></span>
+            </div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Secret 6th</div>
+            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a
+                href="https://maps.app.goo.gl/uiHEpuaC2cuyxquX8"
+                target="_blank"
+                >Secret 6th</a
+              >, Düsseldorf
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a class="link" href="https://secretsound.events/" target="_blank"
+                >Mehr Infos</a
               >
             </div>
+          </div>
+        </div>
+        <div class="row _item">
+          <div class="col-2 col-xs-4">
+            <div class="_date">
+              13.09.<span class="_year">2026</span
+              ><span class="_additional"></span>
+            </div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Gumbertstraßenfest Eller</div>
+            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a
+                href="https://maps.app.goo.gl/7sTXStrZe1nPgYBb6"
+                target="_blank"
+                >Gertrudisplatz</a
+              >, Düsseldorf
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a
+                class="link"
+                href="https://www.individueller.de/de/events"
+                target="_blank"
+                >Mehr Infos</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row _item">
+          <div class="col-2 col-xs-4">
+            <div class="_date">
+              19.09.<span class="_year">2026</span
+              ><span class="_additional"></span>
+            </div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">5th Rock</div>
+            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a href="https://g.page/hausspilles?share" target="_blank"
+                >Spilles</a
+              >, Düsseldorf
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a
+                class="link"
+                href="https://spilles.de/abendbereich/veranstaltungen/"
+                target="_blank"
+                >Mehr Infos</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row _item">
+          <div class="col-2 col-xs-4">
+            <div class="_date">27.11.<span class="_year">2026</span></div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Rhein-Rock präsentiert</div>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a
+                href="https://maps.app.goo.gl/BwPdvFKBpXNApznF9"
+                target="_blank"
+                >Sojus 7</a
+              >, Monheim
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a class="link" href="https://sojus.ticket.io/" target="_blank"
+                >Mehr Infos</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h5 class="h5 mt-l color-grey-700">Vergangene Events</h5>
+          </div>
+        </div>
+        <div class="row _item -expired">
+          <div class="col-2 col-xs-4">
+            <div class="_date">24.01.<span class="_year">2026</span></div>
           </div>
           <div class="col-4 col-xs-8">
             <div class="_title">Support für Dystopera</div>
@@ -60,16 +171,11 @@
             <div class="_link">
               <a
                 class="link"
-                href="https://www.concertteam.de/events/dystopera-2026-01-24"
+                href="https://www.instagram.com/normacho_band/p/DT7ZkANjLYw/"
                 target="_blank"
-                >Mehr Infos</a
+                >Zu den Bildern</a
               >
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h5 class="h5 mt-l color-grey-700">Vergangene Events</h5>
           </div>
         </div>
         <div class="row _item -expired">

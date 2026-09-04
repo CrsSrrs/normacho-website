@@ -24,34 +24,6 @@
         <div class="row _item">
           <div class="col-2 col-xs-4">
             <div class="_date">
-              30.05.<span class="_year">2026</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Secret 6th</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/uiHEpuaC2cuyxquX8"
-                target="_blank"
-                >Secret 6th</a
-              >, Düsseldorf
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a class="link" href="https://secretsound.events/" target="_blank"
-                >Mehr Infos</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
               13.09.<span class="_year">2026</span
               ><span class="_additional"></span>
             </div>
@@ -88,7 +60,7 @@
             </div>
           </div>
           <div class="col-4 col-xs-8">
-            <div class="_title">5th Rock</div>
+            <div class="_title">Rock 'n' Glitter</div>
             <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
           </div>
           <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
@@ -104,6 +76,30 @@
                 class="link"
                 href="https://spilles.de/abendbereich/veranstaltungen/"
                 target="_blank"
+                >Mehr Infos</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row _item">
+          <div class="col-2 col-xs-4">
+            <div class="_date">03.10.<span class="_year">2026</span></div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Cube in Concert</div>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a
+                href="https://maps.app.goo.gl/11kpdT5H4rkkSBhv8"
+                target="_blank"
+                >Cube</a
+              >, Baumberg
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a class="link" href="https://www.cubebaumberg.de" target="_blank"
                 >Mehr Infos</a
               >
             </div>

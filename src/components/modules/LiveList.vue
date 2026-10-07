@@ -23,6 +23,108 @@
         </div>
         <div class="row _item">
           <div class="col-2 col-xs-4">
+            <div class="_date">27.11.<span class="_year">2026</span></div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Rhein-Rock präsentiert</div>
+            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
+              mit
+              <a
+                href="https://www.instagram.com/cleanslate.official/"
+                target="_blank"
+                >Clean Slate</a
+              >
+              und
+              <a
+                href="https://www.instagram.com/quickanddoerty/"
+                target="_blank"
+                >Quick and Dörty
+              </a>
+            </p>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a
+                href="https://maps.app.goo.gl/BwPdvFKBpXNApznF9"
+                target="_blank"
+                >Sojus 7</a
+              >, Monheim
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a
+                class="link"
+                href="https://rhein-rock.ticket.io/MhHBKHUT/"
+                target="_blank"
+                >Tickets holen</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h5 class="h5 mt-l color-grey-700">Vergangene Events</h5>
+          </div>
+        </div>
+        <div class="row _item -expired">
+          <div class="col-2 col-xs-4">
+            <div class="_date">03.10.<span class="_year">2026</span></div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Cube in Concert</div>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a
+                href="https://maps.app.goo.gl/11kpdT5H4rkkSBhv8"
+                target="_blank"
+                >Cube</a
+              >, Baumberg
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a
+                class="link"
+                href="https://www.instagram.com/normacho_band/p/DeDOtqDMxfy/"
+                target="_blank"
+                >Zu den Bildern</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row _item -expired">
+          <div class="col-2 col-xs-4">
+            <div class="_date">
+              19.09.<span class="_year">2026</span
+              ><span class="_additional"></span>
+            </div>
+          </div>
+          <div class="col-4 col-xs-8">
+            <div class="_title">Rock 'n' Glitter</div>
+            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
+          </div>
+          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+            <div class="_location">
+              <a href="https://g.page/hausspilles?share" target="_blank"
+                >Spilles</a
+              >, Düsseldorf
+            </div>
+          </div>
+          <div class="col-2 col-xs-8 col-xs-offset-4">
+            <div class="_link">
+              <a
+                class="link"
+                href="https://www.instagram.com/normacho_band/p/Ddyb-HNiN2H/"
+                target="_blank"
+                >Zu den Bildern</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row _item -expired">
+          <div class="col-2 col-xs-4">
             <div class="_date">
               13.09.<span class="_year">2026</span
               ><span class="_additional"></span>
@@ -45,93 +147,11 @@
             <div class="_link">
               <a
                 class="link"
-                href="https://www.individueller.de/de/events"
+                href="https://www.instagram.com/normacho_band/p/DdQvq4fjJTh/"
                 target="_blank"
-                >Mehr Infos</a
+                >Zu den Bildern</a
               >
             </div>
-          </div>
-        </div>
-        <div class="row _item">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              19.09.<span class="_year">2026</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rock 'n' Glitter</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a href="https://g.page/hausspilles?share" target="_blank"
-                >Spilles</a
-              >, Düsseldorf
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://spilles.de/abendbereich/veranstaltungen/"
-                target="_blank"
-                >Mehr Infos</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item">
-          <div class="col-2 col-xs-4">
-            <div class="_date">03.10.<span class="_year">2026</span></div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Cube in Concert</div>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/11kpdT5H4rkkSBhv8"
-                target="_blank"
-                >Cube</a
-              >, Baumberg
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a class="link" href="https://www.cubebaumberg.de" target="_blank"
-                >Mehr Infos</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item">
-          <div class="col-2 col-xs-4">
-            <div class="_date">27.11.<span class="_year">2026</span></div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rhein-Rock präsentiert</div>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/BwPdvFKBpXNApznF9"
-                target="_blank"
-                >Sojus 7</a
-              >, Monheim
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a class="link" href="https://sojus.ticket.io/" target="_blank"
-                >Mehr Infos</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h5 class="h5 mt-l color-grey-700">Vergangene Events</h5>
           </div>
         </div>
         <div class="row _item -expired">
@@ -201,7 +221,7 @@
             </div>
           </div>
         </div>
-        <div class="row _item -expired">
+        <div class="row _item -expired" v-show="showAllExpired">
           <div class="col-2 col-xs-4">
             <div class="_date">
               25.10.<span class="_year">2025</span
@@ -231,7 +251,7 @@
             </div>
           </div>
         </div>
-        <div class="row _item -expired">
+        <div class="row _item -expired" v-show="showAllExpired">
           <div class="col-2 col-xs-4">
             <div class="_date">
               18.10.<span class="_year">2025</span
@@ -267,7 +287,7 @@
             </div>
           </div>
         </div>
-        <div class="row _item -expired">
+        <div class="row _item -expired" v-show="showAllExpired">
           <div class="col-2 col-xs-4">
             <div class="_date">
               20.09.<span class="_year">2025</span
@@ -292,7 +312,7 @@
             </div>
           </div>
         </div>
-        <div class="row _item -expired">
+        <div class="row _item -expired" v-show="showAllExpired">
           <div class="col-2 col-xs-4">
             <div class="_date">
               19.10.<span class="_year">2024</span
@@ -329,7 +349,7 @@
             </div>
           </div>
         </div>
-        <div class="row _item -expired">
+        <div class="row _item -expired" v-show="showAllExpired">
           <div class="col-2 col-xs-4">
             <div class="_date">
               05.10.<span class="_year">2024</span
@@ -366,7 +386,7 @@
             </div>
           </div>
         </div>
-        <div class="row _item -expired">
+        <div class="row _item -expired" v-show="showAllExpired">
           <div class="col-2 col-xs-4">
             <div class="_date">
               20.07.<span class="_year">2024</span
@@ -408,7 +428,7 @@
             </div>
           </div>
         </div>
-        <div class="row _item -expired">
+        <div class="row _item -expired" v-show="showAllExpired">
           <div class="col-2 col-xs-4">
             <div class="_date">
               26.08.<span class="_year">2023</span
@@ -442,7 +462,7 @@
             </div>
           </div>
         </div>
-        <div class="row _item -expired">
+        <div class="row _item -expired" v-show="showAllExpired">
           <div class="col-2 col-xs-4">
             <div class="_date">
               15.04.<span class="_year">2023</span
@@ -481,7 +501,7 @@
             </div>
           </div>
         </div>
-        <div class="row _item -expired">
+        <div class="row _item -expired" v-show="showAllExpired">
           <div class="col-2 col-xs-4">
             <div class="_date">
               29.10.<span class="_year">2022</span
@@ -518,7 +538,7 @@
             </div>
           </div>
         </div>
-        <div class="row _item -expired">
+        <div class="row _item -expired" v-show="showAllExpired">
           <div class="col-2 col-xs-4">
             <div class="_date">24.10.<span class="_year">2020</span></div>
           </div>
@@ -544,11 +564,26 @@
             </div>
           </div>
         </div>
+        <div class="row text-center" v-if="!showAllExpired">
+          <div class="col-12">
+            <button
+              class="link -slim"
+              type="button"
+              @click="showAllExpired = true"
+            >
+              Weitere anzeigen
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue";
+
+const showAllExpired = ref(false);
+</script>
 
 <style scoped lang="scss" src="@/sass/08_modules/live-list.scss"></style>

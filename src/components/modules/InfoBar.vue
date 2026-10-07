@@ -3,14 +3,19 @@
     <div class="site-inner">
       <div class="row">
         <div class="col-12 text-center">
-          <p>Wir feiern den Release von "Königsallee"!</p>
-          <p v-if="false">
+          <p>Rhein-Rock't mit uns am <b>27.11.</b> im Sojus7 in Monheim!</p>
+          <p v-if="true">
             <Timer
-              starttime="October 18, 2025 18:30:00"
-              endtime="October 18, 2025 22:00:00"
+              starttime="November 27, 2026 19:00:00"
+              endtime="November 27, 2026 23:00:00"
             ></Timer>
           </p>
-          <router-link class="link -light" to="/#music">Reinhören</router-link>
+          <a
+            href="https://rhein-rock.ticket.io/MhHBKHUT/"
+            class="link -light"
+            target="_blank"
+            >Tickets holen</a
+          >
         </div>
       </div>
     </div>

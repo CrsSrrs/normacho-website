@@ -12,8 +12,60 @@
         <div class="col-4"><label>Location</label></div>
         <div class="col-2"></div>
       </div>
+
       <div class="_list">
-        <div class="row _item" v-if="false">
+        <div v-if="upcomingEvents.length">
+          <div
+            v-for="event in upcomingEvents"
+            :key="event.id"
+            class="row _item"
+          >
+            <div class="col-2 col-xs-4">
+              <div class="_date">
+                {{ formatEventDate(event.date)
+                }}<span class="_year">{{ event.date.slice(0, 4) }}</span>
+              </div>
+            </div>
+            <div class="col-4 col-xs-8">
+              <div class="_title">{{ event.title }}</div>
+              <p
+                v-if="event.description"
+                class="mb-0 mb-xs-xxs mt-xxs font-size-xs"
+              >
+                <template
+                  v-for="(part, index) in event.description"
+                  :key="`${event.id}-description-${index}`"
+                >
+                  <a v-if="part.href" :href="part.href" target="_blank">{{
+                    part.text
+                  }}</a>
+                  <template v-else>{{ part.text }}</template>
+                </template>
+              </p>
+            </div>
+            <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+              <div class="_location">
+                <template
+                  v-for="(part, index) in event.location"
+                  :key="`${event.id}-location-${index}`"
+                >
+                  <a v-if="part.href" :href="part.href" target="_blank">{{
+                    part.text
+                  }}</a>
+                  <template v-else>{{ part.text }}</template>
+                </template>
+              </div>
+            </div>
+            <div class="col-2 col-xs-8 col-xs-offset-4">
+              <div v-if="event.action" class="_link">
+                <a class="link" :href="event.action.href" target="_blank">{{
+                  event.action.label
+                }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div v-else class="row _item">
           <div class="col-12 mt-s mb-xs">
             <div class="_location pl-xs-xs">
               Noch keine weiteren Konzerte geplant. Fragt uns gerne an unter
@@ -21,557 +73,73 @@
             </div>
           </div>
         </div>
-        <div class="row _item">
-          <div class="col-2 col-xs-4">
-            <div class="_date">27.11.<span class="_year">2026</span></div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rhein-Rock präsentiert</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
-              mit
-              <a
-                href="https://www.instagram.com/cleanslate.official/"
-                target="_blank"
-                >Clean Slate</a
-              >
-              und
-              <a
-                href="https://www.instagram.com/quickanddoerty/"
-                target="_blank"
-                >Quick and Dörty
-              </a>
-            </p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/BwPdvFKBpXNApznF9"
-                target="_blank"
-                >Sojus 7</a
-              >, Monheim
+
+        <h5 class="h5 mt-l color-grey-700">Vergangene Events</h5>
+        <div v-if="visiblePastEvents.length">
+          <div
+            v-for="event in visiblePastEvents"
+            :key="event.id"
+            class="row _item -expired"
+          >
+            <div class="col-2 col-xs-4">
+              <div class="_date">
+                {{ formatEventDate(event.date)
+                }}<span class="_year">{{ event.date.slice(0, 4) }}</span>
+              </div>
             </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://rhein-rock.ticket.io/MhHBKHUT/"
-                target="_blank"
-                >Tickets holen</a
+            <div class="col-4 col-xs-8">
+              <div class="_title">{{ event.title }}</div>
+              <p
+                v-if="event.description"
+                class="mb-0 mb-xs-xxs mt-xxs font-size-xs"
               >
+                <template
+                  v-for="(part, index) in event.description"
+                  :key="`${event.id}-description-${index}`"
+                >
+                  <a v-if="part.href" :href="part.href" target="_blank">{{
+                    part.text
+                  }}</a>
+                  <template v-else>{{ part.text }}</template>
+                </template>
+              </p>
+            </div>
+            <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
+              <div class="_location">
+                <template
+                  v-for="(part, index) in event.location"
+                  :key="`${event.id}-location-${index}`"
+                >
+                  <a v-if="part.href" :href="part.href" target="_blank">{{
+                    part.text
+                  }}</a>
+                  <template v-else>{{ part.text }}</template>
+                </template>
+              </div>
+            </div>
+            <div class="col-2 col-xs-8 col-xs-offset-4">
+              <div v-if="event.action" class="_link">
+                <a class="link" :href="event.action.href" target="_blank">{{
+                  event.action.label
+                }}</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <h5 class="h5 mt-l color-grey-700">Vergangene Events</h5>
+        <div v-else class="row _item">
+          <div class="col-12 mt-s mb-xs">
+            <div class="_location pl-xs-xs">Noch keine vergangenen Events.</div>
           </div>
         </div>
-        <div class="row _item -expired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">03.10.<span class="_year">2026</span></div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Cube in Concert</div>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/11kpdT5H4rkkSBhv8"
-                target="_blank"
-                >Cube</a
-              >, Baumberg
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/normacho_band/p/DeDOtqDMxfy/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              19.09.<span class="_year">2026</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rock 'n' Glitter</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a href="https://g.page/hausspilles?share" target="_blank"
-                >Spilles</a
-              >, Düsseldorf
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/normacho_band/p/Ddyb-HNiN2H/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              13.09.<span class="_year">2026</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Gumbertstraßenfest Eller</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/7sTXStrZe1nPgYBb6"
-                target="_blank"
-                >Gertrudisplatz</a
-              >, Düsseldorf
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/normacho_band/p/DdQvq4fjJTh/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">24.01.<span class="_year">2026</span></div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Support für Dystopera</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
-              Delayed Album Release Concert von
-              <a href="https://www.instagram.com/dystopera/" target="_blank"
-                >Dystopera</a
-              >
-              mit Support von
-              <a
-                href="https://www.instagram.com/monarchistband/"
-                target="_blank"
-                >Monarchist</a
-              >
-              und Normacho
-            </p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/1jhV7LXy3cjf39RG9"
-                target="_blank"
-                >Ratinger Hof</a
-              >, Düsseldorf
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/normacho_band/p/DT7ZkANjLYw/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">14.11.<span class="_year">2025</span></div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rhein-Rock NOpenAir 2025</div>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/BwPdvFKBpXNApznF9"
-                target="_blank"
-                >Sojus 7</a
-              >, Monheim
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/normacho_band/p/DRPavakjAV9/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired" v-show="showAllExpired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              25.10.<span class="_year">2025</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Cube in Concert</div>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/11kpdT5H4rkkSBhv8"
-                target="_blank"
-                >Cube</a
-              >, Baumberg
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/normacho_band/p/DQP_g8RDFLT/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired" v-show="showAllExpired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              18.10.<span class="_year">2025</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rock Wohnzimmer</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
-              Gemeinsam mit
-              <a
-                href="https://www.instagram.com/tiefenbroich.underground/"
-                target="_blank"
-                >Tiefenbroich Underground</a
-              >
-            </p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a href="https://g.page/hausspilles?share" target="_blank"
-                >Spilles</a
-              >, Düsseldorf
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/normacho_band/p/DP_MrARDD43/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired" v-show="showAllExpired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              20.09.<span class="_year">2025</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rock am Bach</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs"></p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">Umsonst und draußen, Düsseldorf</div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.youtube.com/live/uysO7bHQqzo?si=8TPq0vkRHFIcweBl&t=6h39m27s"
-                target="_blank"
-                >Zur Aufzeichnung</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired" v-show="showAllExpired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              19.10.<span class="_year">2024</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rock your socks off</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
-              Gemeinsam mit
-              <a
-                href="https://www.backstagepro.de/musiker/jan-gruenheidt-singer-songwriter-guitarist-from-duesseldorf-acoustic-blues-rock-alternative-rock-country-saenger-gitarrist-mc-rapper-bassist-songwriter-bandleader-duesseldorf-GWNp8Zk6rF"
-                target="_blank"
-                >Jan Grünheidt</a
-              >
-            </p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a href="https://g.page/hausspilles?share" target="_blank"
-                >Spilles</a
-              >
-              Düsseldorf
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/p/DBWMm3_sZyh/?igsh=MWZ2NThyZWdiY2ZrYg=="
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired" v-show="showAllExpired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              05.10.<span class="_year">2024</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Cube in Concert</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
-              Gemeinsam mit
-              <a href="https://www.instagram.com/dailyhavoc/" target="_blank"
-                >Daily Havoc</a
-              >
-            </p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/8XqvBztuyK95Qos2A"
-                target="_blank"
-                >Cube</a
-              >
-              Baumberg
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/normacho_band/p/DAyVgAbMBe4/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired" v-show="showAllExpired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              20.07.<span class="_year">2024</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rhein-Rock präsentiert</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
-              Gemeinsam mit
-              <a href="https://www.backseatalley.com/" target="_blank"
-                >Backseat Alley</a
-              >
-              und
-              <a
-                href="https://www.instagram.com/cleanslate.official/"
-                target="_blank"
-                >Clean Slate</a
-              >
-            </p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://maps.app.goo.gl/BEADCzi6EvyYL9nG8"
-                target="_blank"
-                >Sojus 7</a
-              >, Monheim
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/normacho_band/p/C9ufk7MsKOr/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired" v-show="showAllExpired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              26.08.<span class="_year">2023</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Rhein-Rock OpenAir 2023</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
-              Es erwarten euch 9 Bands, günstige Preise, viel ehrenamtliche
-              Arbeit und eine entspannte Atmosphäre.
-            </p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a
-                href="https://goo.gl/maps/KD15ZD6LGWWQD2mt9?coh=178571&entry=tt"
-                target="_blank"
-                >Monheim am Rhein</a
-              >
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/p/CxN5sFgMdnG/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired" v-show="showAllExpired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              15.04.<span class="_year">2023</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Bandabend</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
-              Gemeinsam mit
-              <a href="https://www.sonzband.de/" target="_blank">SonZ</a> und
-              <a
-                href="https://www.instagram.com/cosmicmarauderband/"
-                target="_blank"
-                >Cosmic Marauder</a
-              >
-              die Bühne rocken!
-            </p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a href="https://g.page/hausspilles?share" target="_blank"
-                >Spilles</a
-              >
-              Düsseldorf
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/p/CrGZTJ_t1Xz/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired" v-show="showAllExpired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">
-              29.10.<span class="_year">2022</span
-              ><span class="_additional"></span>
-            </div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Benefiz Rock Konzert</div>
-            <p class="mb-0 mb-xs-xxs mt-xxs font-size-xs">
-              Rockmusik für einen guten Zweck: Die regionalen Bands Normacho und
-              <a href="https://www.backseatalley.com/" target="_blank"
-                >Backseat Alley</a
-              >
-              machen sich (laut-)stark für die Ukraine. Die Erlöse des Abends
-              kommen der Nothilfe Ukraine (Aktion Deutschland Hilft) zugute.
-            </p>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a href="https://g.page/hausspilles?share" target="_blank"
-                >Spilles</a
-              >
-              Düsseldorf
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.instagram.com/p/CkbPA6msjhD/"
-                target="_blank"
-                >Zu den Bildern</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row _item -expired" v-show="showAllExpired">
-          <div class="col-2 col-xs-4">
-            <div class="_date">24.10.<span class="_year">2020</span></div>
-          </div>
-          <div class="col-4 col-xs-8">
-            <div class="_title">Krachgarten Wesel Live Stream</div>
-          </div>
-          <div class="col-4 col-xs-8 col-xs-offset-4 mb-xs-xs">
-            <div class="_location">
-              <a href="https://twitch.tv/krachgartentv" target="_blank"
-                >KrachgartenTV</a
-              >
-              auf Twitch
-            </div>
-          </div>
-          <div class="col-2 col-xs-8 col-xs-offset-4">
-            <div class="_link">
-              <a
-                class="link"
-                href="https://www.youtube.com/watch?v=LWYP-yLMAsY"
-                target="_blank"
-                >Zur Aufzeichnung</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row text-center" v-if="!showAllExpired">
+
+        <div v-if="hasMorePastEvents" class="row text-center mt-s">
           <div class="col-12">
             <button
               class="link -slim"
               type="button"
-              @click="showAllExpired = true"
+              @click="showAllPastEvents = !showAllPastEvents"
             >
-              Weitere anzeigen
+              {{ showAllPastEvents ? "Weniger anzeigen" : "Weitere anzeigen" }}
             </button>
           </div>
         </div>
@@ -581,9 +149,355 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
-const showAllExpired = ref(false);
+interface EventContentPart {
+  text: string;
+  href?: string;
+}
+
+interface LiveEvent {
+  id: string;
+  date: string;
+  title: string;
+  description?: EventContentPart[];
+  location: EventContentPart[];
+  action?: {
+    label: string;
+    href: string;
+  };
+}
+
+const events: LiveEvent[] = [
+  {
+    id: "rhein-rock-2026",
+    date: "2026-11-27",
+    title: "Rhein-Rock präsentiert",
+    description: [
+      { text: "mit " },
+      {
+        text: "Clean Slate",
+        href: "https://www.instagram.com/cleanslate.official/",
+      },
+      { text: " und " },
+      {
+        text: "Quick and Dörty",
+        href: "https://www.instagram.com/quickanddoerty/",
+      },
+    ],
+    location: [
+      {
+        text: "Sojus 7",
+        href: "https://maps.app.goo.gl/BwPdvFKBpXNApznF9",
+      },
+      { text: ", Monheim" },
+    ],
+    action: {
+      label: "Tickets holen",
+      href: "https://rhein-rock.ticket.io/MhHBKHUT/",
+    },
+  },
+  {
+    id: "cube-in-concert-2026-10",
+    date: "2026-10-03",
+    title: "Cube in Concert",
+    location: [
+      { text: "Cube", href: "https://maps.app.goo.gl/11kpdT5H4rkkSBhv8" },
+      { text: ", Baumberg" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/normacho_band/p/DeDOtqDMxfy/",
+    },
+  },
+  {
+    id: "rock-n-glitter-2026",
+    date: "2026-09-19",
+    title: "Rock 'n' Glitter",
+    location: [
+      { text: "Spilles", href: "https://g.page/hausspilles?share" },
+      { text: ", Düsseldorf" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/normacho_band/p/Ddyb-HNiN2H/",
+    },
+  },
+  {
+    id: "gumbertstrassenfest-2026",
+    date: "2026-09-13",
+    title: "Gumbertstraßenfest Eller",
+    location: [
+      {
+        text: "Gertrudisplatz",
+        href: "https://maps.app.goo.gl/7sTXStrZe1nPgYBb6",
+      },
+      { text: ", Düsseldorf" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/normacho_band/p/DdQvq4fjJTh/",
+    },
+  },
+  {
+    id: "support-dystopera-2026",
+    date: "2026-01-24",
+    title: "Support für Dystopera",
+    description: [
+      { text: "Delayed Album Release Concert von " },
+      { text: "Dystopera", href: "https://www.instagram.com/dystopera/" },
+      { text: " mit Support von " },
+      {
+        text: "Monarchist",
+        href: "https://www.instagram.com/monarchistband/",
+      },
+      { text: " und Normacho" },
+    ],
+    location: [
+      {
+        text: "Ratinger Hof",
+        href: "https://maps.app.goo.gl/1jhV7LXy3cjf39RG9",
+      },
+      { text: ", Düsseldorf" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/normacho_band/p/DT7ZkANjLYw/",
+    },
+  },
+  {
+    id: "rhein-rock-openair-2025",
+    date: "2025-11-14",
+    title: "Rhein-Rock NOpenAir 2025",
+    location: [
+      {
+        text: "Sojus 7",
+        href: "https://maps.app.goo.gl/BwPdvFKBpXNApznF9",
+      },
+      { text: ", Monheim" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/normacho_band/p/DRPavakjAV9/",
+    },
+  },
+  {
+    id: "cube-in-concert-2025-10",
+    date: "2025-10-25",
+    title: "Cube in Concert",
+    location: [
+      { text: "Cube", href: "https://maps.app.goo.gl/11kpdT5H4rkkSBhv8" },
+      { text: ", Baumberg" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/normacho_band/p/DQP_g8RDFLT/",
+    },
+  },
+  {
+    id: "rock-wohnzimmer-2025",
+    date: "2025-10-18",
+    title: "Rock Wohnzimmer",
+    description: [
+      { text: "Gemeinsam mit " },
+      {
+        text: "Tiefenbroich Underground",
+        href: "https://www.instagram.com/tiefenbroich.underground/",
+      },
+    ],
+    location: [
+      { text: "Spilles", href: "https://g.page/hausspilles?share" },
+      { text: ", Düsseldorf" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/normacho_band/p/DP_MrARDD43/",
+    },
+  },
+  {
+    id: "rock-am-bach-2025",
+    date: "2025-09-20",
+    title: "Rock am Bach",
+    location: [{ text: "Umsonst und draußen, Düsseldorf" }],
+    action: {
+      label: "Zur Aufzeichnung",
+      href: "https://www.youtube.com/live/uysO7bHQqzo?si=8TPq0vkRHFIcweBl&t=6h39m27s",
+    },
+  },
+  {
+    id: "rock-your-socks-off-2024",
+    date: "2024-10-19",
+    title: "Rock your socks off",
+    description: [
+      { text: "Gemeinsam mit " },
+      {
+        text: "Jan Grünheidt",
+        href: "https://www.backstagepro.de/musiker/jan-gruenheidt-singer-songwriter-guitarist-from-duesseldorf-acoustic-blues-rock-alternative-rock-country-saenger-gitarrist-mc-rapper-bassist-songwriter-bandleader-duesseldorf-GWNp8Zk6rF",
+      },
+    ],
+    location: [
+      { text: "Spilles", href: "https://g.page/hausspilles?share" },
+      { text: " Düsseldorf" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/p/DBWMm3_sZyh/?igsh=MWZ2NThyZWdiY2ZrYg==",
+    },
+  },
+  {
+    id: "cube-in-concert-2024-10",
+    date: "2024-10-05",
+    title: "Cube in Concert",
+    description: [
+      { text: "Gemeinsam mit " },
+      {
+        text: "Daily Havoc",
+        href: "https://www.instagram.com/dailyhavoc/",
+      },
+    ],
+    location: [
+      { text: "Cube", href: "https://maps.app.goo.gl/8XqvBztuyK95Qos2A" },
+      { text: " Baumberg" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/normacho_band/p/DAyVgAbMBe4/",
+    },
+  },
+  {
+    id: "rhein-rock-praesentiert-2024",
+    date: "2024-07-20",
+    title: "Rhein-Rock präsentiert",
+    description: [
+      { text: "Gemeinsam mit " },
+      { text: "Backseat Alley", href: "https://www.backseatalley.com/" },
+      { text: " und " },
+      {
+        text: "Clean Slate",
+        href: "https://www.instagram.com/cleanslate.official/",
+      },
+    ],
+    location: [
+      {
+        text: "Sojus 7",
+        href: "https://maps.app.goo.gl/BEADCzi6EvyYL9nG8",
+      },
+      { text: ", Monheim" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/normacho_band/p/C9ufk7MsKOr/",
+    },
+  },
+  {
+    id: "rhein-rock-openair-2023",
+    date: "2023-08-26",
+    title: "Rhein-Rock OpenAir 2023",
+    description: [
+      {
+        text: "Es erwarten euch 9 Bands, günstige Preise, viel ehrenamtliche Arbeit und eine entspannte Atmosphäre.",
+      },
+    ],
+    location: [
+      {
+        text: "Monheim am Rhein",
+        href: "https://goo.gl/maps/KD15ZD6LGWWQD2mt9?coh=178571&entry=tt",
+      },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/p/CxN5sFgMdnG/",
+    },
+  },
+  {
+    id: "bandabend-2023",
+    date: "2023-04-15",
+    title: "Bandabend",
+    description: [
+      { text: "Gemeinsam mit " },
+      { text: "SonZ", href: "https://www.sonzband.de/" },
+      { text: " und " },
+      {
+        text: "Cosmic Marauder",
+        href: "https://www.instagram.com/cosmicmarauderband/",
+      },
+      { text: " die Bühne rocken!" },
+    ],
+    location: [
+      { text: "Spilles", href: "https://g.page/hausspilles?share" },
+      { text: " Düsseldorf" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/p/CrGZTJ_t1Xz/",
+    },
+  },
+  {
+    id: "benefiz-rock-konzert-2022",
+    date: "2022-10-29",
+    title: "Benefiz Rock Konzert",
+    description: [
+      {
+        text: "Rockmusik für einen guten Zweck: Die regionalen Bands Normacho und ",
+      },
+      { text: "Backseat Alley", href: "https://www.backseatalley.com/" },
+      {
+        text: " machen sich (laut-)stark für die Ukraine. Die Erlöse des Abends kommen der Nothilfe Ukraine (Aktion Deutschland Hilft) zugute.",
+      },
+    ],
+    location: [
+      { text: "Spilles", href: "https://g.page/hausspilles?share" },
+      { text: " Düsseldorf" },
+    ],
+    action: {
+      label: "Zu den Bildern",
+      href: "https://www.instagram.com/p/CkbPA6msjhD/",
+    },
+  },
+  {
+    id: "krachgarten-wesel-2020",
+    date: "2020-10-24",
+    title: "Krachgarten Wesel Live Stream",
+    location: [
+      { text: "KrachgartenTV", href: "https://twitch.tv/krachgartentv" },
+      { text: " auf Twitch" },
+    ],
+    action: {
+      label: "Zur Aufzeichnung",
+      href: "https://www.youtube.com/watch?v=LWYP-yLMAsY",
+    },
+  },
+];
+
+const showAllPastEvents = ref(false);
+const today = new Date();
+const todayDate = [
+  today.getFullYear(),
+  String(today.getMonth() + 1).padStart(2, "0"),
+  String(today.getDate()).padStart(2, "0"),
+].join("-");
+
+const upcomingEvents = computed(() =>
+  events
+    .filter((event) => event.date >= todayDate)
+    .sort((a, b) => a.date.localeCompare(b.date)),
+);
+
+const pastEvents = computed(() =>
+  events
+    .filter((event) => event.date < todayDate)
+    .sort((a, b) => b.date.localeCompare(a.date)),
+);
+
+const visiblePastEvents = computed(() =>
+  showAllPastEvents.value ? pastEvents.value : pastEvents.value.slice(0, 5),
+);
+
+const hasMorePastEvents = computed(() => pastEvents.value.length > 5);
+
+function formatEventDate(date: string): string {
+  return `${date.slice(8, 10)}.${date.slice(5, 7)}.`;
+}
 </script>
 
 <style scoped lang="scss" src="@/sass/08_modules/live-list.scss"></style>
